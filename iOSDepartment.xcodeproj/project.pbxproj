@@ -7,15 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
 		F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */; };
 		F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF022506B8DF0098CED8 /* ViewController.swift */; };
 		F6D2EF062506B8DF0098CED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D2EF042506B8DF0098CED8 /* Main.storyboard */; };
 		F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D2EF072506B8E40098CED8 /* Assets.xcassets */; };
 		F6D2EF0B2506B8E40098CED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D2EF092506B8E40098CED8 /* LaunchScreen.storyboard */; };
+		F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */; };
+		F6FED1FA2506C18C007EF1F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */; };
+		F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */; };
+		F6FED1FE2506C2B2007EF1F8 /* BaseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */; };
+		F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */; };
+		F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */; };
+		F6FED2042506C778007EF1F8 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */; };
+		F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */; };
+		F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2072506C849007EF1F8 /* BaseRouter.swift */; };
+		F6FED20A2506C8B0007EF1F8 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */; };
+		F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */; };
+		F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */; };
+		F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */; };
+		F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */; };
+		F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */; };
+		F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */; };
+		F6FED2192506D568007EF1F8 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */; };
+		F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */; };
+		F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */; };
+		F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */; };
+		F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2212506D754007EF1F8 /* String+Extensions.swift */; };
+		F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */; };
+		F6FED2352506DB73007EF1F8 /* AuthorizationLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */; };
+		F6FED23A2506DB8A007EF1F8 /* AuthorizationLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
+		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D2EEFB2506B8DF0098CED8 /* iOSDepartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDepartment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +52,30 @@
 		F6D2EF072506B8E40098CED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D2EF0A2506B8E40098CED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6D2EF0C2506B8E40098CED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
+		F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewOutput.swift; sourceTree = "<group>"; };
+		F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
+		F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
+		F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		F6FED2072506C849007EF1F8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
+		F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
+		F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
+		F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
+		F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
+		F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
+		F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		F6FED2212506D754007EF1F8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLocalization.swift; sourceTree = "<group>"; };
+		F6FED2362506DB73007EF1F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AuthorizationLocalization.strings; sourceTree = "<group>"; };
+		F6FED23B2506DB8A007EF1F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AuthorizationLocalization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +83,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF40D25AB9686B04F2ABDFAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E669101758F12A0149B8DA9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */,
+				9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6D2EEF22506B8DF0098CED8 = {
 			isa = PBXGroup;
 			children = (
 				F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */,
 				F6D2EEFC2506B8DF0098CED8 /* Products */,
+				E669101758F12A0149B8DA9A /* Pods */,
+				CF40D25AB9686B04F2ABDFAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +128,9 @@
 		F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */ = {
 			isa = PBXGroup;
 			children = (
+				F6FED1F82506C165007EF1F8 /* Architecture */,
+				F6FED1F32506C0AE007EF1F8 /* Screens */,
+				F6FED21E2506D64B007EF1F8 /* Extensions */,
 				F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */,
 				F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */,
 				F6D2EF022506B8DF0098CED8 /* ViewController.swift */,
@@ -67,6 +142,83 @@
 			path = iOSDepartment;
 			sourceTree = "<group>";
 		};
+		F6FED1F32506C0AE007EF1F8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED1F42506C0BD007EF1F8 /* Authorization */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F6FED1F42506C0BD007EF1F8 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED1F52506C0CA007EF1F8 /* View */,
+				F6FED20B2506C984007EF1F8 /* Interactor */,
+				F6FED2252506D89A007EF1F8 /* Localization */,
+				F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */,
+				F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */,
+				F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F6FED1F52506C0CA007EF1F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */,
+				F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */,
+				F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6FED1F82506C165007EF1F8 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */,
+				F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */,
+				F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */,
+				F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */,
+				F6FED2072506C849007EF1F8 /* BaseRouter.swift */,
+				F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */,
+				F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */,
+				F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */,
+				F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */,
+				F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		F6FED20B2506C984007EF1F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */,
+				F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */,
+				F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F6FED21E2506D64B007EF1F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */,
+				F6FED2212506D754007EF1F8 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F6FED2252506D89A007EF1F8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */,
+				F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */,
+				F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6D2EF0F2506B8E40098CED8 /* Build configuration list for PBXNativeTarget "iOSDepartment" */;
 			buildPhases = (
+				1C91F996239075B613A19E23 /* [CP] Check Pods Manifest.lock */,
 				F6D2EEF72506B8DF0098CED8 /* Sources */,
 				F6D2EEF82506B8DF0098CED8 /* Frameworks */,
 				F6D2EEF92506B8DF0098CED8 /* Resources */,
@@ -109,6 +262,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F6D2EEF22506B8DF0098CED8;
 			productRefGroup = F6D2EEFC2506B8DF0098CED8 /* Products */;
@@ -126,21 +280,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D2EF0B2506B8E40098CED8 /* LaunchScreen.storyboard in Resources */,
+				F6FED2352506DB73007EF1F8 /* AuthorizationLocalization.strings in Resources */,
 				F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */,
+				F6FED23A2506DB8A007EF1F8 /* AuthorizationLocalization.strings in Resources */,
 				F6D2EF062506B8DF0098CED8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C91F996239075B613A19E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSDepartment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6D2EEF72506B8DF0098CED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FED1FA2506C18C007EF1F8 /* BaseViewController.swift in Sources */,
+				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
+				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
+				F6FED2042506C778007EF1F8 /* AuthorizationPresenter.swift in Sources */,
+				F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */,
+				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
+				F6FED20A2506C8B0007EF1F8 /* AuthorizationRouter.swift in Sources */,
+				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
+				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
+				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
+				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
+				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
 				F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */,
+				F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */,
+				F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */,
+				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
+				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,
+				F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */,
+				F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */,
+				F6FED2192506D568007EF1F8 /* AuthorizationAssembly.swift in Sources */,
 				F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */,
+				F6FED1FE2506C2B2007EF1F8 /* BaseViewOutput.swift in Sources */,
+				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
+				F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +366,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FED2362506DB73007EF1F8 /* en */,
+			);
+			name = AuthorizationLocalization.strings;
+			sourceTree = "<group>";
+		};
+		F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FED23B2506DB8A007EF1F8 /* ru */,
+			);
+			name = AuthorizationLocalization.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -170,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,6 +503,7 @@
 		};
 		F6D2EF102506B8E40098CED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +522,7 @@
 		};
 		F6D2EF112506B8E40098CED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
