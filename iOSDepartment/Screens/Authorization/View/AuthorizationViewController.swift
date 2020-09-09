@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AuthorizationViewController: BaseViewController, AuthorizationViewInput {
+class AuthorizationViewController: BaseViewController {
     
     weak var localization: AuthorizationLocalization!
     weak var presenter: AuthorizationViewOutput!

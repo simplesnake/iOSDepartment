@@ -10,7 +10,7 @@ import Foundation
 
 class AuthorizationAssembly: BaseAssembly {
     
-    static func assemble() -> AuthorizationViewController {
+    static func assemble(data: AuthorizationData? = nil) -> AuthorizationViewController {
         let view = AuthorizationViewController()
         let router = AuthorizationRouter()
         let presenter = AuthorizationPresenter()
@@ -25,6 +25,7 @@ class AuthorizationAssembly: BaseAssembly {
         presenter.router = router
         
         interactor.presenter = presenter
+        interactor.data = data
 
         return view
     }

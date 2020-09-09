@@ -6,13 +6,7 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-class AuthorizationInteractor: BaseInteractor, AuthorizationInteractorInput {//}, AuthorizationInteractorData {
+class AuthorizationInteractor: BaseInteractor<AuthorizationData> {
     
     weak var presenter: AuthorizationInteractorOutput!
-}
-
-// TODO Спорный момент
-protocol AuthorizationInteractorData {
-    var test: Int { get set }
-    var qwer: String { get set }
 }

@@ -9,3 +9,7 @@
 protocol AuthorizationViewInput: BaseViewInput {
 
 }
+
+extension AuthorizationViewController: AuthorizationViewInput {
+    
+}

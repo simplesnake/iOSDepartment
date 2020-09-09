@@ -8,6 +8,6 @@
 
 import Foundation
 
-class BaseInteractor: NSObject {
-    
+class BaseInteractor<Data>: NSObject {
+    var data: Data!
 }

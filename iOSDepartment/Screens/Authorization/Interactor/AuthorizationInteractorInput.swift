@@ -9,3 +9,7 @@
 protocol AuthorizationInteractorInput: BaseInteractorInput {
     
 }
+
+extension AuthorizationInteractor: AuthorizationInteractorInput {
+    
+}
