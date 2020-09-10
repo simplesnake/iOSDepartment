@@ -7,5 +7,12 @@
 //
 
 protocol AuthorizationViewOutput: BaseViewOutput {
+    var x: Int { get }
+}
+
+extension AuthorizationViewController: AuthorizationViewOutput {
+    var x: Int {
+        return 0
+    }
     
 }

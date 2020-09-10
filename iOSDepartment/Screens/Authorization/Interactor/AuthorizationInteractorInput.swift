@@ -7,9 +7,11 @@
 //
 
 protocol AuthorizationInteractorInput: BaseInteractorInput {
-    
+    var title: Int { get }
 }
 
 extension AuthorizationInteractor: AuthorizationInteractorInput {
-    
+    var title: Int {
+        data.q
+    }
 }
