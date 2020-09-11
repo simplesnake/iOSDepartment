@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595FE728250BBFDF00456E14 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE727250BBFDF00456E14 /* BaseNetwork.swift */; };
+		595FE72B250BC06700456E14 /* AuthrizationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */; };
+		595FE72D250BC08900456E14 /* AuthorizationNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */; };
+		595FE730250BC46200456E14 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72F250BC46200456E14 /* API.swift */; };
+		595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE731250BC9DF00456E14 /* NetworkService.swift */; };
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F674E346250986EF0069FE65 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674E345250986EF0069FE65 /* AuthorizationData.swift */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
@@ -43,6 +48,11 @@
 
 /* Begin PBXFileReference section */
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595FE727250BBFDF00456E14 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthrizationNetwork.swift; sourceTree = "<group>"; };
+		595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationNetworkProtocol.swift; sourceTree = "<group>"; };
+		595FE72F250BC46200456E14 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		595FE731250BC9DF00456E14 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		F674E345250986EF0069FE65 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
@@ -92,6 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595FE729250BC04F00456E14 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */,
+				595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		595FE72E250BC45600456E14 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				595FE72F250BC46200456E14 /* API.swift */,
+				595FE731250BC9DF00456E14 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CF40D25AB9686B04F2ABDFAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +158,7 @@
 		F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */ = {
 			isa = PBXGroup;
 			children = (
+				595FE72E250BC45600456E14 /* Network */,
 				F6FED1F82506C165007EF1F8 /* Architecture */,
 				F6FED1F32506C0AE007EF1F8 /* Screens */,
 				F6FED21E2506D64B007EF1F8 /* Extensions */,
@@ -155,6 +184,7 @@
 		F6FED1F42506C0BD007EF1F8 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				595FE729250BC04F00456E14 /* Network */,
 				F6FED1F52506C0CA007EF1F8 /* View */,
 				F6FED20B2506C984007EF1F8 /* Interactor */,
 				F6FED2252506D89A007EF1F8 /* Localization */,
@@ -189,6 +219,7 @@
 				F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */,
 				F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */,
 				F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */,
+				595FE727250BBFDF00456E14 /* BaseNetwork.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -233,6 +264,7 @@
 				F6D2EEF72506B8DF0098CED8 /* Sources */,
 				F6D2EEF82506B8DF0098CED8 /* Frameworks */,
 				F6D2EEF92506B8DF0098CED8 /* Resources */,
+				D813F3B3C9EBE25FDCCB1CA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +347,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D813F3B3C9EBE25FDCCB1CA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,6 +375,7 @@
 				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
 				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
 				F6FED2042506C778007EF1F8 /* AuthorizationPresenter.swift in Sources */,
+				595FE730250BC46200456E14 /* API.swift in Sources */,
 				F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */,
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
 				F6FED20A2506C8B0007EF1F8 /* AuthorizationRouter.swift in Sources */,
@@ -334,6 +384,7 @@
 				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
 				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
+				595FE728250BBFDF00456E14 /* BaseNetwork.swift in Sources */,
 				F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */,
 				F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */,
 				F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */,
@@ -342,10 +393,13 @@
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,
 				F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */,
 				F674E346250986EF0069FE65 /* AuthorizationData.swift in Sources */,
+				595FE72D250BC08900456E14 /* AuthorizationNetworkProtocol.swift in Sources */,
 				F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */,
 				F6FED2192506D568007EF1F8 /* AuthorizationAssembly.swift in Sources */,
 				F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */,
+				595FE72B250BC06700456E14 /* AuthrizationNetwork.swift in Sources */,
 				F6FED1FE2506C2B2007EF1F8 /* BaseViewOutput.swift in Sources */,
+				595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */,
 				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
 				F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */,
 			);

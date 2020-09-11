@@ -6,5 +6,6 @@ target 'iOSDepartment' do
   use_frameworks!
 
   # Pods for iOSDepartment
-
+  pod 'Moya', '~> 13.0'
+  
 end

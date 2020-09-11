@@ -9,4 +9,5 @@
 class AuthorizationInteractor: BaseInteractor<AuthorizationData> {
     
     weak var presenter: AuthorizationInteractorOutput!
+    weak var network: AuthorizationNetworkProtocol!
 }
