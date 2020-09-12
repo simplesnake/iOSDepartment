@@ -20,14 +20,6 @@ class AuthorizationPresenter: BasePresenter {
     }
 }
 
-extension AuthorizationPresenter: AuthorizationViewOutput {
-    
-}
-
-extension AuthorizationPresenter: AuthorizationInteractorOutput {
-    
-}
-
 extension AuthorizationPresenter: AuthorizationCallbackDelegate {
     func test() {
         print("test")

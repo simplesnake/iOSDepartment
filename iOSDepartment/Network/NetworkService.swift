@@ -7,47 +7,45 @@
 //
 
 import Foundation
-import Moya
+//import Moya
 
 
 // MARK: - ChooseService implementation
 final class NetworkService {
     
-    func request<T1: TargetType, T2: Decodable>(_ request: T1) -> Single<T2> {
-        let provider = MoyaProvider<T1>(plugins: [VerbosePlugin(verbose: true)])
-        globalProvider = provider
-        return provider.rx
-            .request(request, callbackQueue: DispatchQueue.main).observeOn(MainScheduler.instance)
-            .filterSuccessfulStatusAndRedirectCodes()
-            .map(T2.self)
-            .catchError { error in
-                if let moyaError = error as? MoyaError {
-                    return Single.error(moyaError)
-                } else if let chooseError = error as? ErrorResponse {
-                    return Single.error(chooseError)
-                } else {
-                    return Single.error(error)
-                }
-            }
-    }
-
-    
-    func deleteRequest<T1: TargetType>(_ request: T1) -> Single<Response> {
-        let provider = MoyaProvider<T1>(plugins: [VerbosePlugin(verbose: true)])
-        globalProvider = provider
-            return provider.rx
-                    .request(request)
-                    .filterSuccessfulStatusAndRedirectCodes()
-                    .catchError { error in
-                        if let moyaError = error as? MoyaError {
-                            return Single.error(moyaError)
-                        } else if let chooseError = error as? ErrorResponse {
-                            return Single.error(chooseError)
-                        } else {
-                            return Single.error(error)
-                        }
-                     }
-    }
+//    func request<T1: TargetType, T2: Decodable>(_ request: BaseTarget<T1>) -> Single<T2> {
+//        let provider = MoyaProvider<T1>(plugins: [VerbosePlugin(verbose: true)])
+//        return provider.rx
+//            .request(request, callbackQueue: DispatchQueue.main).observeOn(MainScheduler.instance)
+//            .filterSuccessfulStatusAndRedirectCodes()
+//            .map(T2.self)
+//            .catchError { error in
+//                if let moyaError = error as? MoyaError {
+//                    return Single.error(moyaError)
+//                } else if let chooseError = error as? ErrorResponse {
+//                    return Single.error(chooseError)
+//                } else {
+//                    return Single.error(error)
+//                }
+//            }
+//    }
+//
+//
+//    func deleteRequest<T1: TargetType>(_ request: T1) -> Single<Response> {
+//        let provider = MoyaProvider<T1>(plugins: [VerbosePlugin(verbose: true)])
+//            return provider.rx
+//                    .request(request)
+//                    .filterSuccessfulStatusAndRedirectCodes()
+//                    .catchError { error in
+//                        if let moyaError = error as? MoyaError {
+//                            return Single.error(moyaError)
+//                        } else if let chooseError = error as? ErrorResponse {
+//                            return Single.error(chooseError)
+//                        } else {
+//                            return Single.error(error)
+//                        }
+//                     }
+//    }
     
     
     
@@ -55,31 +53,9 @@ final class NetworkService {
 
 // MARK: - ChooseServiceProtocol implementation
 extension NetworkService {
-    func getChooseByID(id: Int64) -> Single<ChooseResponse> {
-        return request(GetChooseByIdAPI(token: token, id: id))
+    func testRequest(token: String, id: Int64) -> API.TestAPI {
+        return API.TestAPI(token: token, id: id)
     }
-    
-    func answerChoose(id: Int64, model: ChooseAnswerRequest) -> Single<ChooseResponse> {
-        return request(AnswerChooseAPI(token: token, requestData: model, id: id))
-    }
-    
-    func deleteChooses(model: ChooseDeleteRequest) -> Single<Response> {
-        return deleteRequest(DeleteChooseAPI(token: token, requestData: model))
-    }
-    
-    func postChoose(model: PostChooseRequest) -> Single<PostChooseResponse> {
-        return request(PostChooseAPI(token: token, requestData: model))
-    }
-    
-    func getMyChooses(model: PaginationModel) -> Single<MyChooseList> {
-        return request(GetOwnChoosesAPI(token: token, requestData: model))
-    }
-    
-    func getProfile() -> Single<ProfileChoose> {
-        return request(GetOwnProfileAPI(token: token))
-    }
-    
-    func getChooses(limit: Int) -> Single<NewChooseList> { return request(GetChoosesAPI(token: token, requestData: limit)) }
     
 }
 struct VerbosePlugin: PluginType {

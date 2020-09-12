@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AuthorizationNetworkProtocol: NSObject {
-    func authorizationRequest(login: String, password: String)
+    func authorizationRequest(login: String, password: String) -> API.TestAPI
 }

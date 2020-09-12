@@ -9,5 +9,6 @@
 import Foundation
 
 protocol BaseViewInput: NSObject {
-
+    func loader(_ show: Bool)
+    func showToast(_ text: String)
 }

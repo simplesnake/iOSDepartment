@@ -10,6 +10,6 @@ protocol AuthorizationInteractorOutput: BaseInteractorOutput {
     
 }
 
-extension AuthorizationInteractor: AuthorizationInteractorOutput {
-
+extension AuthorizationPresenter: AuthorizationInteractorOutput {
+    
 }

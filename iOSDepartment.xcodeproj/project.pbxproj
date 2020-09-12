@@ -14,6 +14,7 @@
 		595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE731250BC9DF00456E14 /* NetworkService.swift */; };
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F674E346250986EF0069FE65 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674E345250986EF0069FE65 /* AuthorizationData.swift */; };
+		F674E348250C21A80069FE65 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674E347250C21A80069FE65 /* RequestBuilder.swift */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
 		F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */; };
 		F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF022506B8DF0098CED8 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		F674E345250986EF0069FE65 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
+		F674E347250C21A80069FE65 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		F6D2EEFB2506B8DF0098CED8 /* iOSDepartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDepartment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				595FE72F250BC46200456E14 /* API.swift */,
 				595FE731250BC9DF00456E14 /* NetworkService.swift */,
+				F674E347250C21A80069FE65 /* RequestBuilder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */,
 				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
 				F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */,
+				F674E348250C21A80069FE65 /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

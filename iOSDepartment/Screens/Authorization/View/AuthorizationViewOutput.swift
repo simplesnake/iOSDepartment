@@ -10,7 +10,7 @@ protocol AuthorizationViewOutput: BaseViewOutput {
     var x: Int { get }
 }
 
-extension AuthorizationViewController: AuthorizationViewOutput {
+extension AuthorizationPresenter: AuthorizationViewOutput {
     var x: Int {
         return 0
     }

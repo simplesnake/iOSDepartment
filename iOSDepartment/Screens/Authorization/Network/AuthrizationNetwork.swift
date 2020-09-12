@@ -6,8 +6,10 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-class AuthorizationNetwork: BaseNetwork, AuthorizationNetworkProtocol {
-    func authorizationRequest(login: String, password: String) {
-        <#code#>
+import Foundation
+
+class AuthorizationNetwork: NSObject, AuthorizationNetworkProtocol {
+    func authorizationRequest(login: String, password: String) -> API.TestAPI {
+        return API.TestAPI(requestData: EmptyRequest())
     }
 }
