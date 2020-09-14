@@ -7,57 +7,129 @@
 //
 
 import Foundation
-//import Moya
+import Moya
 
 class API: NSObject {
-    class TestAPI: BaseTarget<EmptyRequest, TestApiResponse> {
-        init(requestData: RequestModel<EmptyRequest> = nil) {
-            super.init(requestData: requestData)
+    
+    static var provider: Any?
+    
+    public static let server: String = "http://185.188.183.104"
+    public static let serverPort: String = "8090"
+    public static let baseURL: URL = URL(string: "\(server):\(serverPort)/app/api/")!
+    
+    class Authorization: BaseTarget<AuthorizationRequest, AuthorizationResponse> {
+        class Model: RequestModel<AuthorizationRequest, AuthorizationResponse> {}
+        
+        init(_ model: Model) {
+            super.init(model: model)
             self.path = "/user/choose/"
         }
         
         override var headers: [String : String]? {
             return [:]
         }
+        
     }
 }
 
-
-
-struct TestApiResponse: Decodable {
-    
+struct AuthorizationRequest: Encodable {
+    let login: String
+    let password: String
 }
 
-
-
-
-//class BaseChooseProvider<T: Encodable, T2: Decodable>: BaseTarget<T> {
-//}
+struct AuthorizationResponse: Decodable {
+    let accountId: Int64?
+    let token: String?
+}
 
 class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     
     var path: String = ""
     
-    var baseURL = URL(string: "https://dev.choose2020.tk/api")!
+    let baseURL: URL = URL(string: "http://185.188.183.104:8090/app/api/")!
+//    var baseURL = URL(string: "https://dev.choose2020.tk/api")!
     var method: Moya.Method = .get
     var sampleData: Data = Data()
     var headers: [String : String]? {
         return ["Authorization": "Тут токен напрямую из хранилища"]
     }
     var task: Task {
-        return task(data: requestModel?.requestData)
+        return task(data: model.requestData)
     }
     
-    var requestModel: RequestModel<T1>?
+    var model: RequestModel<T1, T2>
     
     var unknownError: ErrorResponse = ErrorResponse(message: "Unknown error", details: "Update API or contact the backend developer")
     
-    init(requestModel: RequestModel<T1>?, method: Moya.Method = .get) {
-        self.requestModel = requestModel
+    init(model: RequestModel<T1, T2>, method: Moya.Method = .get) {
+        self.model = model
         self.method = method
     }
     
-    func task<T: Encodable>(data: T?) -> Task {
+    func request(model: RequestModel<T1, T2>) {
+            
+//        let provider = MoyaProvider<BaseTarget<T1, T2>>()
+        let provider = MoyaProvider<Self>()
+        API.provider = provider
+        
+        if model.showLoader {
+            model.view?.loader(true)
+        }
+            
+        provider.request(self as! Self) { [weak self] result in
+            if model.showLoader {
+                model.view?.loader(false)
+            }
+            model.onRequestComplete?()
+            switch result {
+            case .success(let response):
+                if(response.statusCode == 200){
+                    let responseData = try? response.map(T2.self)
+                    guard let data = responseData else {
+                        if model.showToast {
+                            model.view?.showToast("Ошибка парсинга")
+                        }
+                        model.onParseDataError?()
+                        return
+                    }
+                    
+                    model.onSuccess?(data)
+                    return
+                }
+                
+                print("Ошибка: \(response.statusCode)")
+                guard let errorData = try? response.map(ErrorResponse.self) else {
+                    print("Описание ошибки: неизвестная ошибка")
+                    if model.showToast {
+                        model.view?.showToast("Ошибка: \(response.statusCode)")
+                    }
+                    model.onError?(-1, self!.unknownError)
+                    return
+                }
+                
+                print("Описание ошибки: \(ErrorsDescription.getLocalizableDescription(id: errorData.details))")
+                if model.showToast {
+                    model.view?.showToast("Ошибка: \(response.statusCode)\nОписание ошибки: \(ErrorsDescription.getLocalizableDescription(id: errorData.details))")
+                }
+                
+    //            Обычно это ошибка протухшего токена
+    //            if response.statusCode == 400 {
+    //                Storer.token = nil
+    //            }
+                
+                model.onError?(response.statusCode, errorData)
+                
+            case .failure(let error):
+                print(error.errorDescription ?? "Unknown error")
+                if model.showToast {
+                    model.view?.showToast("Ошибка запроса на клиенте: \(error.errorDescription ?? "неизвестная ошибка")")
+                }
+                model.onFail?(error)
+            }
+        }
+    }
+    
+    private func task<T: Encodable>(data: T?) -> Task {
         
         guard let data = data else {
             return .requestPlain
@@ -82,74 +154,12 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
         
     }
     
-    func toParams<T: Encodable>(data : T) -> [String: Any]
-    {
+    private func toParams<T: Encodable>(data : T) -> [String: Any] {
         return (try? JSONSerialization.jsonObject(with: JSONEncoder().encode(data))) as? [String: Any] ?? [:]
     }
-    
-    func request(model: RequestModel<T1>) {
-            
-        let provider = MoyaProvider<BaseTarget<T1, T2>>()
-        
-        if showLoader {
-            view?.loader(true)
-        }
-            
-        let view = model.view
-            provider.request(self) { [weak self] result in
-                if requestModel?.showLoader {
-                    view?.loader(false)
-                }
-                requestModel?.onRequestComplete?()
-                switch result {
-                case .success(let response):
-                    if(response.statusCode == 200){
-                        let responseData = try? response.map(T2.self)
-                        guard let data = responseData else {
-                            if requestModel?.showToast {
-                                requestModel?.view?.showToast("Ошибка парсинга")
-                            }
-                            requestModel?.onParseDataError?()
-                            return
-                        }
-                        
-                        requestModel?.onSuccess?(data)
-                        return
-                    }
-                    
-                    print("Ошибка: \(response.statusCode)")
-                    guard let errorData = try? response.map(ErrorResponse.self) else {
-                        print("Описание ошибки: неизвестная ошибка")
-                        if showToast {
-                            requestModel?.view?.showToast("Ошибка: \(response.statusCode)")
-                        }
-                        onError?(-1, self!.unknownError)
-                        return
-                    }
-                    
-                    print("Описание ошибки: \(ErrorsDescription.getLocalizableDescription(id: errorData.details))")
-                    if requestModel?.showToast {
-                        requestModel?.view?.showToast("Ошибка: \(response.statusCode)\nОписание ошибки: \(ErrorsDescription.getLocalizableDescription(id: errorData.details))")
-                    }
-                    
-    //                if response.statusCode == 400 {
-    //                    Storer.token = nil
-    //                }
-                    
-                    requestModel?.onError?(response.statusCode, errorData)
-                    
-                case .failure(let error):
-                    print(error.errorDescription ?? "Unknown error")
-                    if requestModel?.showToast {
-                        requestModel?.view?.showToast("Ошибка запроса на клиенте: \(error.errorDescription ?? "неизвестная ошибка")")
-                    }
-                    requestModel?.onFail?(error)
-                }
-            }
-        }
 }
 
-struct RequestModel<T1: Encodable, T2: Decodable> {
+class RequestModel<T1: Encodable, T2: Decodable> {
     var requestData: T1
     var onSuccess: ((T2) -> ())? = nil//Данные успешно получены и распарсены
     var onError: ((Int, ErrorResponse) -> ())? = nil//Код и ошибка с сервера
@@ -159,6 +169,18 @@ struct RequestModel<T1: Encodable, T2: Decodable> {
     var view: BaseViewInput? = nil
     var showLoader: Bool = true
     var showToast: Bool = true
+    
+    init(requestData: T1, onSuccess: ((T2) -> ())? = nil, onError: ((Int, ErrorResponse) -> ())? = nil, onFail: ((Error) -> ())? = nil, onParseDataError: (()->())? = nil, onRequestComplete: (()->())? = nil, view: BaseViewInput? = nil, showLoader: Bool = true, showToast: Bool = true) {
+        self.requestData = requestData
+        self.onSuccess = onSuccess
+        self.onError = onError
+        self.onFail = onFail
+        self.onParseDataError = onParseDataError
+        self.onRequestComplete = onRequestComplete
+        self.view = view
+        self.showLoader = showLoader
+        self.showToast = showToast
+    }
 }
 
 class EmptyRequest: Encodable {}

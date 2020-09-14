@@ -8,8 +8,8 @@
 
 import Foundation
 
-class AuthorizationNetwork: NSObject, AuthorizationNetworkProtocol {
-    func authorizationRequest(login: String, password: String) -> API.TestAPI {
-        return API.TestAPI(requestData: EmptyRequest())
+class AuthorizationNetwork: BaseNetwork {
+    func authorization(_ model: API.Authorization.Model) {
+        API.Authorization(model)
     }
 }
