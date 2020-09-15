@@ -11,7 +11,7 @@ class AuthorizationInteractor: BaseInteractor<AuthorizationData> {
     weak var presenter: AuthorizationInteractorOutput!
     weak var network: AuthorizationNetwork!
     
-    func authorization() {
-        network.authorization(API.Authorization.Model(requestData: AuthorizationRequest()))
+    func authorization(login: String, password: String) {
+        network.authorization(API.Authorization.Model(requestData: AuthorizationRequest(login: login, password: password)))
     }
 }

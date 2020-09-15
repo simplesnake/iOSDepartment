@@ -16,6 +16,7 @@ class AuthorizationAssembly: BaseAssembly {
         let presenter = AuthorizationPresenter()
         let interactor = AuthorizationInteractor()
         let localization = AuthorizationLocalization()
+        let network = AuthorizationNetwork()
 
         view.presenter = presenter
         view.localization = localization
@@ -26,6 +27,8 @@ class AuthorizationAssembly: BaseAssembly {
         
         interactor.presenter = presenter
         interactor.data = data
+        interactor.network = network
+        
 
         return view
     }

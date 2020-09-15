@@ -10,6 +10,6 @@ import Foundation
 
 class AuthorizationNetwork: BaseNetwork {
     func authorization(_ model: API.Authorization.Model) {
-        API.Authorization(model)
+        API.Authorization(model).request()
     }
 }

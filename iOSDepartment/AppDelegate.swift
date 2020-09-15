@@ -11,10 +11,34 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.backgroundColor = .yellow
+        window?.rootViewController = AuthorizationAssembly.assemble()
+        window?.makeKeyAndVisible()
+        
+        let controller = AuthorizationAssembly.assemble()
+        if let window = self.window, let rootViewController = window.rootViewController {
+            var currentController = rootViewController
+            while let presentedController = currentController.presentedViewController {
+                currentController = presentedController
+            }
+            currentController.present(controller, animated: true, completion: nil)
+        }
+        
+        if let navigationController = self.window?.rootViewController as? UINavigationController
+        {
+            navigationController.pushViewController(controller, animated: true)
+        }
+        else
+        {
+            print("Navigation Controller not Found")
+        }
+        
         return true
     }
 

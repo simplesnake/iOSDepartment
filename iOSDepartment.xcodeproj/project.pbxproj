@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		595FE728250BBFDF00456E14 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE727250BBFDF00456E14 /* BaseNetwork.swift */; };
-		595FE72B250BC06700456E14 /* AuthrizationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */; };
-		595FE72D250BC08900456E14 /* AuthorizationNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */; };
-		595FE730250BC46200456E14 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE72F250BC46200456E14 /* API.swift */; };
-		595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FE731250BC9DF00456E14 /* NetworkService.swift */; };
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
-		F674E346250986EF0069FE65 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674E345250986EF0069FE65 /* AuthorizationData.swift */; };
-		F674E348250C21A80069FE65 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674E347250C21A80069FE65 /* RequestBuilder.swift */; };
+		F646592E2511619A00E6D999 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646592D2511619A00E6D999 /* API.swift */; };
+		F6465934251165F000E6D999 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465933251165F000E6D999 /* AuthorizationRequest.swift */; };
+		F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465935251165FC00E6D999 /* AuthorizationResponse.swift */; };
+		F6465938251166FC00E6D999 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465937251166FC00E6D999 /* RequestModel.swift */; };
+		F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64659392511674C00E6D999 /* BaseTarget.swift */; };
+		F646593C251167FE00E6D999 /* BaseNetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646593B251167FE00E6D999 /* BaseNetworkModels.swift */; };
+		F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646593D2511685700E6D999 /* AuthorizationNetwork.swift */; };
+		F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594325116BAF00E6D999 /* AuthorizationData.swift */; };
+		F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594525116BC600E6D999 /* AuthorizationAssembly.swift */; };
+		F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594725116C2A00E6D999 /* AuthorizationRouter.swift */; };
+		F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594925116C4500E6D999 /* AuthorizationPresenter.swift */; };
+		F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
 		F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */; };
 		F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF022506B8DF0098CED8 /* ViewController.swift */; };
@@ -27,17 +33,14 @@
 		F6FED1FE2506C2B2007EF1F8 /* BaseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */; };
 		F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */; };
 		F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */; };
-		F6FED2042506C778007EF1F8 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */; };
 		F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */; };
 		F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2072506C849007EF1F8 /* BaseRouter.swift */; };
-		F6FED20A2506C8B0007EF1F8 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */; };
 		F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */; };
 		F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */; };
 		F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */; };
 		F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */; };
 		F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */; };
 		F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */; };
-		F6FED2192506D568007EF1F8 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */; };
 		F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */; };
 		F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */; };
 		F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */; };
@@ -50,14 +53,20 @@
 /* Begin PBXFileReference section */
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		595FE727250BBFDF00456E14 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
-		595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthrizationNetwork.swift; sourceTree = "<group>"; };
-		595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationNetworkProtocol.swift; sourceTree = "<group>"; };
-		595FE72F250BC46200456E14 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		595FE731250BC9DF00456E14 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
-		F674E345250986EF0069FE65 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
-		F674E347250C21A80069FE65 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		F646592D2511619A00E6D999 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F6465933251165F000E6D999 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
+		F6465935251165FC00E6D999 /* AuthorizationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
+		F6465937251166FC00E6D999 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		F64659392511674C00E6D999 /* BaseTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTarget.swift; sourceTree = "<group>"; };
+		F646593B251167FE00E6D999 /* BaseNetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkModels.swift; sourceTree = "<group>"; };
+		F646593D2511685700E6D999 /* AuthorizationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationNetwork.swift; sourceTree = "<group>"; };
+		F646594325116BAF00E6D999 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
+		F646594525116BC600E6D999 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		F646594725116C2A00E6D999 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		F646594925116C4500E6D999 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCallbackDelegate.swift; sourceTree = "<group>"; };
 		F6D2EEFB2506B8DF0098CED8 /* iOSDepartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDepartment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,17 +81,14 @@
 		F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewOutput.swift; sourceTree = "<group>"; };
 		F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
 		F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
-		F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		F6FED2072506C849007EF1F8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
 		F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
 		F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
 		F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
 		F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
-		F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
 		F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
 		F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
@@ -107,18 +113,7 @@
 		595FE729250BC04F00456E14 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				595FE72A250BC06700456E14 /* AuthrizationNetwork.swift */,
-				595FE72C250BC08900456E14 /* AuthorizationNetworkProtocol.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		595FE72E250BC45600456E14 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				595FE72F250BC46200456E14 /* API.swift */,
-				595FE731250BC9DF00456E14 /* NetworkService.swift */,
-				F674E347250C21A80069FE65 /* RequestBuilder.swift */,
+				F646593D2511685700E6D999 /* AuthorizationNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -138,6 +133,67 @@
 				9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F64659312511659C00E6D999 /* Network models */ = {
+			isa = PBXGroup;
+			children = (
+				F6465932251165C100E6D999 /* Authorization */,
+			);
+			path = "Network models";
+			sourceTree = "<group>";
+		};
+		F6465932251165C100E6D999 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F6465933251165F000E6D999 /* AuthorizationRequest.swift */,
+				F6465935251165FC00E6D999 /* AuthorizationResponse.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F646593F25116B4B00E6D999 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F646594925116C4500E6D999 /* AuthorizationPresenter.swift */,
+				F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F646594025116B6200E6D999 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F646594725116C2A00E6D999 /* AuthorizationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F646594125116B6E00E6D999 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F646594525116BC600E6D999 /* AuthorizationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F646594225116B8300E6D999 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F646594325116BAF00E6D999 /* AuthorizationData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F670E3AA2511611100762513 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F646592D2511619A00E6D999 /* API.swift */,
+				F6465937251166FC00E6D999 /* RequestModel.swift */,
+				F64659392511674C00E6D999 /* BaseTarget.swift */,
+				F646593B251167FE00E6D999 /* BaseNetworkModels.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		F6D2EEF22506B8DF0098CED8 = {
@@ -161,7 +217,7 @@
 		F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */ = {
 			isa = PBXGroup;
 			children = (
-				595FE72E250BC45600456E14 /* Network */,
+				F64659312511659C00E6D999 /* Network models */,
 				F6FED1F82506C165007EF1F8 /* Architecture */,
 				F6FED1F32506C0AE007EF1F8 /* Screens */,
 				F6FED21E2506D64B007EF1F8 /* Extensions */,
@@ -187,14 +243,14 @@
 		F6FED1F42506C0BD007EF1F8 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				F646594225116B8300E6D999 /* Data */,
+				F646594125116B6E00E6D999 /* Assembly */,
+				F646594025116B6200E6D999 /* Router */,
+				F646593F25116B4B00E6D999 /* Presenter */,
 				595FE729250BC04F00456E14 /* Network */,
 				F6FED1F52506C0CA007EF1F8 /* View */,
 				F6FED20B2506C984007EF1F8 /* Interactor */,
 				F6FED2252506D89A007EF1F8 /* Localization */,
-				F6FED2032506C778007EF1F8 /* AuthorizationPresenter.swift */,
-				F6FED2092506C8B0007EF1F8 /* AuthorizationRouter.swift */,
-				F6FED2182506D568007EF1F8 /* AuthorizationAssembly.swift */,
-				F674E345250986EF0069FE65 /* AuthorizationData.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -212,6 +268,7 @@
 		F6FED1F82506C165007EF1F8 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				F670E3AA2511611100762513 /* Network */,
 				F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */,
 				F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */,
 				F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */,
@@ -377,35 +434,38 @@
 				F6FED1FA2506C18C007EF1F8 /* BaseViewController.swift in Sources */,
 				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
 				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
-				F6FED2042506C778007EF1F8 /* AuthorizationPresenter.swift in Sources */,
-				595FE730250BC46200456E14 /* API.swift in Sources */,
 				F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */,
+				F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */,
+				F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */,
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
-				F6FED20A2506C8B0007EF1F8 /* AuthorizationRouter.swift in Sources */,
+				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
 				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
+				F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */,
 				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
+				F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */,
 				595FE728250BBFDF00456E14 /* BaseNetwork.swift in Sources */,
+				F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */,
 				F6D2EF032506B8DF0098CED8 /* ViewController.swift in Sources */,
 				F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */,
 				F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */,
 				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
 				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
+				F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */,
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,
 				F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */,
-				F674E346250986EF0069FE65 /* AuthorizationData.swift in Sources */,
-				595FE72D250BC08900456E14 /* AuthorizationNetworkProtocol.swift in Sources */,
+				F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */,
+				F646592E2511619A00E6D999 /* API.swift in Sources */,
 				F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */,
-				F6FED2192506D568007EF1F8 /* AuthorizationAssembly.swift in Sources */,
 				F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */,
-				595FE72B250BC06700456E14 /* AuthrizationNetwork.swift in Sources */,
 				F6FED1FE2506C2B2007EF1F8 /* BaseViewOutput.swift in Sources */,
-				595FE732250BC9DF00456E14 /* NetworkService.swift in Sources */,
+				F6465938251166FC00E6D999 /* RequestModel.swift in Sources */,
+				F646593C251167FE00E6D999 /* BaseNetworkModels.swift in Sources */,
 				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
 				F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */,
-				F674E348250C21A80069FE65 /* RequestBuilder.swift in Sources */,
+				F6465934251165F000E6D999 /* AuthorizationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

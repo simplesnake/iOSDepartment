@@ -7,12 +7,9 @@
 //
 
 protocol AuthorizationViewOutput: BaseViewOutput {
-    var x: Int { get }
+    
 }
 
 extension AuthorizationPresenter: AuthorizationViewOutput {
-    var x: Int {
-        return 0
-    }
     
 }

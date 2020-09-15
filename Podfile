@@ -7,5 +7,6 @@ target 'iOSDepartment' do
 
   # Pods for iOSDepartment
   pod 'Moya', '~> 13.0'
+  pod 'SnapKit', '~> 5.0.0'
   
 end

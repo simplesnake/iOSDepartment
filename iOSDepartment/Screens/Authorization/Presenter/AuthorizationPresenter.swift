@@ -9,23 +9,10 @@
 import Foundation
 
 class AuthorizationPresenter: BasePresenter {
-
+    
     weak var view: AuthorizationViewInput!
     weak var interactor: AuthorizationInteractorInput!
     weak var router: AuthorizationRouter!
-    
-    
-    func getData() {
-        print(interactor.title)
-    }
 }
 
-extension AuthorizationPresenter: AuthorizationCallbackDelegate {
-    func test() {
-        print("test")
-    }
-}
 
-protocol AuthorizationCallbackDelegate {
-    func test()
-}

@@ -6,6 +6,4 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-struct AuthorizationData {
-    let q: Int = 0
-}
+struct AuthorizationData {}
