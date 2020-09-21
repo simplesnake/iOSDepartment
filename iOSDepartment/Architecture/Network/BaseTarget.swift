@@ -12,6 +12,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     
     var path: String = ""
     let baseURL: URL = URL(string: "http://185.188.183.104:8090/app/api/")!
+//    let baseURL: URL = PlistManager<BaseURL>().value.url
     var method: Moya.Method = .get
     let sampleData: Data = Data()
     var headers: [String : String]? {
@@ -33,7 +34,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     func request() {
             
 //        let provider = MoyaProvider<BaseTarget<T1, T2>>()
-        let provider = MoyaProvider<Self>()
+        let provider = MoyaProvider<Self>(plugins: [VerbosePlugin(verbose: true)])
         API.provider = provider
         
         if model.showLoader {

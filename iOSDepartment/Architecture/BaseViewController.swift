@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, BaseViewInput {
     
     func loader(_ show: Bool) {
         print("Loder: \(show)")

@@ -7,9 +7,12 @@
 //
 
 protocol AuthorizationViewInput: BaseViewInput {
-
+    func authorizationDenied()
 }
 
 extension AuthorizationViewController: AuthorizationViewInput {
-    
+    func authorizationDenied() {
+        print("AuthorizationViewController")
+        print("Authorization denied!")
+    }
 }

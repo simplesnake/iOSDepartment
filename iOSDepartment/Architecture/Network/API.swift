@@ -17,12 +17,12 @@ class API: NSObject {
         class Model: RequestModel<AuthorizationRequest, AuthorizationResponse> {}
         
         init(_ model: Model) {
-            super.init(model: model)
-            self.path = "/user/choose/"
+            super.init(model: model, method: .post)
+            self.path = "auth.login"
         }
         
         override var headers: [String : String]? {
-            return [:]
+            return ["Authorization": "Bearer "]
         }
     }
 }

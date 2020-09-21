@@ -166,5 +166,13 @@ extension String{
     func localize(_ table: String = "") -> String {
         return NSLocalizedString(self, tableName: table, comment: "")
     }
+    
+    func url(prefix: String = "", postfix: String = "") -> URL? {
+        return URL(string: "\(prefix)\(self)\(postfix)")
+    }
+    
+    var url: URL? {
+        return url()
+    }
 
 }

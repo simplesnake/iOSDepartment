@@ -7,9 +7,16 @@
 //
 
 protocol AuthorizationInteractorOutput: BaseInteractorOutput {
-    
+    func authorizationSuccess()
+    func authorizationDenied()
 }
 
 extension AuthorizationPresenter: AuthorizationInteractorOutput {
+    func authorizationSuccess() {
+        print("Success!")
+    }
     
+    func authorizationDenied() {
+        view.authorizationDenied()
+    }
 }

@@ -7,9 +7,22 @@
 //
 
 protocol AuthorizationInteractorInput: BaseInteractorInput {
-    
+    func authorization(login: String, password: String)
 }
 
 extension AuthorizationInteractor: AuthorizationInteractorInput {
-    
+    func authorization(login: String, password: String) {
+        network.authorization(API.Authorization.Model(
+            requestData: AuthorizationRequest(login: login, password: password),
+            onSuccess: {
+                [weak self] data in
+                guard let self = self else { return }
+                self.presenter.authorizationSuccess()
+            }, onError: {
+                [weak self] code, error in
+                guard let self = self else { return }
+                self.presenter.authorizationDenied()
+            }
+        ))
+    }
 }

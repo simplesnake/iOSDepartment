@@ -11,8 +11,6 @@ import Foundation
 class AuthorizationPresenter: BasePresenter {
     
     weak var view: AuthorizationViewInput!
-    weak var interactor: AuthorizationInteractorInput!
+    var interactor: AuthorizationInteractorInput!
     weak var router: AuthorizationRouter!
 }
-
-

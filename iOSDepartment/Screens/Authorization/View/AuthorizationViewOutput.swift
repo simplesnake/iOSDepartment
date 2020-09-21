@@ -7,9 +7,11 @@
 //
 
 protocol AuthorizationViewOutput: BaseViewOutput {
-    
+    func authorizationButtonTap(login: String, password: String)
 }
 
 extension AuthorizationPresenter: AuthorizationViewOutput {
-    
+    func authorizationButtonTap(login: String, password: String) {
+        interactor.authorization(login: login, password: password)
+    }
 }

@@ -20,22 +20,27 @@ extension AuthorizationViewController {
 
 class AuthorizationViewController: BaseViewController {
     
-    weak var localization: AuthorizationLocalization!
-    weak var presenter: AuthorizationViewOutput!
+    var localization: AuthorizationLocalization!
+    var presenter: AuthorizationViewOutput!
     
-    private lazy var button: UIButton = {
-        let button = UIButton()
+    private lazy var button: BaseButton = {
+        let button = BaseButton()
         button.setTitle("Жми сюда", for: .normal)
+        button.onTap = {
+            [weak self] _ in
+            guard let self = self else { return }
+            self.presenter.authorizationButtonTap(login: "simplesnake@mail.ru", password: "000000")
+        }
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad")
         setupUI()
     }
     
     func setupUI() {
-        view.backgroundColor = .red
         addSubviews()
         makeConstraints()
     }
