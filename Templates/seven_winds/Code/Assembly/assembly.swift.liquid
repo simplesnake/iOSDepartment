@@ -1,0 +1,33 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ module_info.name }}Assembly: BaseAssembly {
+    
+    static func assemble(data: {{ module_info.name }}Data? = nil) -> {{ module_info.name }}ViewController {
+        let view = {{ module_info.name }}ViewController()
+        let router = {{ module_info.name }}Router()
+        let presenter = {{ module_info.name }}Presenter()
+        let interactor = {{ module_info.name }}Interactor()
+        let localization = {{ module_info.name }}Localization()
+        let network = {{ module_info.name }}Network()
+
+        view.presenter = presenter
+        view.localization = localization
+        
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.router = router
+        
+        interactor.presenter = presenter
+        interactor.data = data
+        interactor.network = network
+        
+        return view
+    }
+    
+}

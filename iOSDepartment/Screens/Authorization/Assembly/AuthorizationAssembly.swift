@@ -6,8 +6,6 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-import Foundation
-
 class AuthorizationAssembly: BaseAssembly {
     
     static func assemble(data: AuthorizationData? = nil) -> AuthorizationViewController {
@@ -29,7 +27,6 @@ class AuthorizationAssembly: BaseAssembly {
         interactor.data = data
         interactor.network = network
         
-
         return view
     }
     

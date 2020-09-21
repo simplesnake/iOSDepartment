@@ -6,8 +6,6 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-import Foundation
-
 class AuthorizationNetwork: BaseNetwork {
     func authorization(_ model: API.Authorization.Model) {
         API.Authorization(model).request()

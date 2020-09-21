@@ -6,8 +6,6 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
-import Foundation
-
 class AuthorizationPresenter: BasePresenter {
     
     weak var view: AuthorizationViewInput!
