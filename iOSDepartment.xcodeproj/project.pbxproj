@@ -28,6 +28,7 @@
 		F6F1204225179E3900F40383 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1204125179E3900F40383 /* PlistManager.swift */; };
 		F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1204C2517A6A400F40383 /* BaseButton.swift */; };
 		F6F1205625192BEF00F40383 /* VerbosePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1205525192BEF00F40383 /* VerbosePlugin.swift */; };
+		F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F4C251E8E53003D92F8 /* StorageManager.swift */; };
 		F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */; };
 		F6FED1FA2506C18C007EF1F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */; };
 		F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */; };
@@ -77,6 +78,7 @@
 		F6F1204125179E3900F40383 /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		F6F1204C2517A6A400F40383 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F6F1205525192BEF00F40383 /* VerbosePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbosePlugin.swift; sourceTree = "<group>"; };
+		F6F73F4C251E8E53003D92F8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F1204125179E3900F40383 /* PlistManager.swift */,
+				F6F73F4C251E8E53003D92F8 /* StorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
 				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
+				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
 				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,

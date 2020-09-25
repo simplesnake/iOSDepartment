@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - KeychainAccess (4.2.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -9,22 +10,25 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - KeychainAccess
   - Moya (~> 13.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KeychainAccess
     - Moya
     - Result
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 9dc0d48c0132e54872cede36e59529a0edb73afe
+PODFILE CHECKSUM: 0a9b2e7e5a3c6896fc45a991a30fdd45b14f5450
 
 COCOAPODS: 1.9.3

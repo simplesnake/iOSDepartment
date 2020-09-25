@@ -26,6 +26,7 @@ class AuthorizationAssembly: BaseAssembly {
         interactor.presenter = presenter
         interactor.data = data
         interactor.network = network
+        interactor.storageManager = StorageManager.shared
         
         return view
     }

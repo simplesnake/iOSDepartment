@@ -17,6 +17,7 @@ extension AuthorizationInteractor: AuthorizationInteractorInput {
             onSuccess: {
                 [weak self] data in
                 guard let self = self else { return }
+                self.storageManager.token = data.token!
                 self.presenter.authorizationSuccess()
             }, onError: {
                 [weak self] code, error in

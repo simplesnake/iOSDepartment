@@ -7,8 +7,7 @@
 //
 
 class AuthorizationInteractor: BaseInteractor<AuthorizationData> {
-    
     weak var presenter: AuthorizationInteractorOutput!
     var network: AuthorizationNetwork!
-    
+    var storageManager: StorageManager!
 }
