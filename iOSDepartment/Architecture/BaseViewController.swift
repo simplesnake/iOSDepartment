@@ -8,13 +8,15 @@
 
 import UIKit
 
-class BaseViewController: UIViewController, BaseViewInput {
+class BaseViewController: UIViewController, BaseViewInput, NavigationProtocol {
     
     func loader(_ show: Bool) {
         print("Loder: \(show)")
+        
     }
     
     func showToast(_ text: String) {
         print("Toast: \(text)")
     }
+    
 }

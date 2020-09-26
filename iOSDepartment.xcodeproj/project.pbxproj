@@ -29,6 +29,10 @@
 		F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1204C2517A6A400F40383 /* BaseButton.swift */; };
 		F6F1205625192BEF00F40383 /* VerbosePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1205525192BEF00F40383 /* VerbosePlugin.swift */; };
 		F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F4C251E8E53003D92F8 /* StorageManager.swift */; };
+		F6F73F51251FB3EB003D92F8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F50251FB3EB003D92F8 /* UIViewController+Extensions.swift */; };
+		F6F73F56251FB6E8003D92F8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F55251FB6E8003D92F8 /* BaseRouter.swift */; };
+		F6F73F59251FB70A003D92F8 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F58251FB70A003D92F8 /* NavigationProtocol.swift */; };
+		F6F73F5C251FB9B0003D92F8 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F5B251FB9B0003D92F8 /* UIApplication+Extensions.swift */; };
 		F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */; };
 		F6FED1FA2506C18C007EF1F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */; };
 		F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */; };
@@ -36,7 +40,6 @@
 		F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */; };
 		F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */; };
 		F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */; };
-		F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2072506C849007EF1F8 /* BaseRouter.swift */; };
 		F6FED20D2506C9A1007EF1F8 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */; };
 		F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */; };
 		F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */; };
@@ -79,6 +82,10 @@
 		F6F1204C2517A6A400F40383 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F6F1205525192BEF00F40383 /* VerbosePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbosePlugin.swift; sourceTree = "<group>"; };
 		F6F73F4C251E8E53003D92F8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		F6F73F50251FB3EB003D92F8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F6F73F55251FB6E8003D92F8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		F6F73F58251FB70A003D92F8 /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		F6F73F5B251FB9B0003D92F8 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
@@ -86,7 +93,6 @@
 		F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
 		F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
 		F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		F6FED2072506C849007EF1F8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
 		F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
@@ -254,6 +260,15 @@
 			path = "Base views";
 			sourceTree = "<group>";
 		};
+		F6F73F53251FB6CB003D92F8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F6F73F55251FB6E8003D92F8 /* BaseRouter.swift */,
+				F6F73F58251FB70A003D92F8 /* NavigationProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		F6FED1F32506C0AE007EF1F8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,12 +305,12 @@
 		F6FED1F82506C165007EF1F8 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				F6F73F53251FB6CB003D92F8 /* Router */,
 				F670E3AA2511611100762513 /* Network */,
 				F6FED1F92506C18C007EF1F8 /* BaseViewController.swift */,
 				F6FED1FD2506C2B2007EF1F8 /* BaseViewOutput.swift */,
 				F6FED1FF2506C33C007EF1F8 /* BaseViewInput.swift */,
 				F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */,
-				F6FED2072506C849007EF1F8 /* BaseRouter.swift */,
 				F6FED20C2506C9A1007EF1F8 /* BaseInteractor.swift */,
 				F6FED20E2506C9D4007EF1F8 /* BaseInteractorOutput.swift */,
 				F6FED2102506C9F4007EF1F8 /* BaseInteractorInput.swift */,
@@ -321,6 +336,8 @@
 			children = (
 				F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */,
 				F6FED2212506D754007EF1F8 /* String+Extensions.swift */,
+				F6F73F50251FB3EB003D92F8 /* UIViewController+Extensions.swift */,
+				F6F73F5B251FB9B0003D92F8 /* UIApplication+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +476,7 @@
 				F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */,
 				F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */,
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
+				F6F73F56251FB6E8003D92F8 /* BaseRouter.swift in Sources */,
 				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
@@ -468,11 +486,11 @@
 				F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */,
 				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
 				F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */,
+				F6F73F5C251FB9B0003D92F8 /* UIApplication+Extensions.swift in Sources */,
 				F6F1204225179E3900F40383 /* PlistManager.swift in Sources */,
 				595FE728250BBFDF00456E14 /* BaseNetwork.swift in Sources */,
 				F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */,
 				F6FED2002506C33C007EF1F8 /* BaseViewInput.swift in Sources */,
-				F6FED2082506C849007EF1F8 /* BaseRouter.swift in Sources */,
 				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
 				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
 				F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */,
@@ -480,6 +498,8 @@
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,
 				F6FED2112506C9F4007EF1F8 /* BaseInteractorInput.swift in Sources */,
 				F6F1205625192BEF00F40383 /* VerbosePlugin.swift in Sources */,
+				F6F73F51251FB3EB003D92F8 /* UIViewController+Extensions.swift in Sources */,
+				F6F73F59251FB70A003D92F8 /* NavigationProtocol.swift in Sources */,
 				F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */,
 				F646592E2511619A00E6D999 /* API.swift in Sources */,
 				F6FED20F2506C9D4007EF1F8 /* BaseInteractorOutput.swift in Sources */,
