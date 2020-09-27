@@ -20,10 +20,6 @@ class API: NSObject {
             super.init(model: model, method: .post)
             self.path = "auth.login"
         }
-        
-        override var headers: [String : String]? {
-            return ["Authorization": "Bearer "]
-        }
     }
 }
 

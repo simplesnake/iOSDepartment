@@ -1,5 +1,5 @@
 //
-//  BaseViewOutput.swift
+//  BaseInteractorOutput.swift
 //  iOSDepartment
 //
 //  Created by Александр Строев on 07.09.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BaseViewOutput: NSObject {
-    
+protocol BaseInteractorOutput: NSObject {
+    var screenUtilities: (LoaderProtocol & ToastProtocol)? { get }
 }

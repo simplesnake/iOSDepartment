@@ -1,5 +1,5 @@
 //
-//  BaseInteractor.swift
+//  BaseViewInput.swift
 //  iOSDepartment
 //
 //  Created by Александр Строев on 07.09.2020.
@@ -8,6 +8,4 @@
 
 import Foundation
 
-class BaseInteractor<Data>: NSObject {
-    var data: Data!
-}
+protocol BaseViewInput: NSObject {}

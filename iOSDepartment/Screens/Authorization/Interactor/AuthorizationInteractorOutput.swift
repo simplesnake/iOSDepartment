@@ -12,6 +12,7 @@ protocol AuthorizationInteractorOutput: BaseInteractorOutput {
 }
 
 extension AuthorizationPresenter: AuthorizationInteractorOutput {
+    
     func authorizationSuccess() {
         print("Success!")
     }
@@ -19,4 +20,5 @@ extension AuthorizationPresenter: AuthorizationInteractorOutput {
     func authorizationDenied() {
         view.authorizationDenied()
     }
+    
 }

@@ -8,6 +8,4 @@
 
 import Foundation
 
-class BaseAssembly: NSObject {
-    
-}
+class BaseAssembly: NSObject {}

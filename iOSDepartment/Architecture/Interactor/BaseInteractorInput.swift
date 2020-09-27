@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol BaseInteractorInput: NSObject {
-    
-}
+protocol BaseInteractorInput: NSObject {}

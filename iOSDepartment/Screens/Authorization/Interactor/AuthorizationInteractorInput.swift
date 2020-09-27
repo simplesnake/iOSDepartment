@@ -23,7 +23,8 @@ extension AuthorizationInteractor: AuthorizationInteractorInput {
                 [weak self] code, error in
                 guard let self = self else { return }
                 self.presenter.authorizationDenied()
-            }
+            },
+            view: presenter.screenUtilities
         ))
     }
 }

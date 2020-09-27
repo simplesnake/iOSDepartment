@@ -12,6 +12,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     
     var path: String = ""
     let baseURL: URL = URL(string: "http://185.188.183.104:8090/app/api/")!
+    //Надо сделать получение параметров из plist.info
 //    let baseURL: URL = PlistManager<BaseURL>().value.url
     var method: Moya.Method = .get
     let sampleData: Data = Data()
@@ -32,8 +33,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     }
     
     func request() {
-            
-//        let provider = MoyaProvider<BaseTarget<T1, T2>>()
+        
         let provider = MoyaProvider<Self>(plugins: [VerbosePlugin(verbose: true)])
         API.provider = provider
         

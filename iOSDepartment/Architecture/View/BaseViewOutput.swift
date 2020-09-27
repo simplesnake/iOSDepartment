@@ -1,5 +1,5 @@
 //
-//  BaseInteractorOutput.swift
+//  BaseViewOutput.swift
 //  iOSDepartment
 //
 //  Created by Александр Строев on 07.09.2020.
@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol BaseInteractorOutput: NSObject {
-    
-}
+protocol BaseViewOutput: NSObject {}

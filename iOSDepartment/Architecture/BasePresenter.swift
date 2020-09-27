@@ -9,5 +9,5 @@
 import Foundation
 
 class BasePresenter: NSObject {
-    
+    var screenUtilities: (LoaderProtocol & ToastProtocol)?
 }

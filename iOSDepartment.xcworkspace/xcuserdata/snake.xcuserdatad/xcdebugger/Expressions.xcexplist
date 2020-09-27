@@ -16,6 +16,11 @@
       </ContextState>
       <ContextState
          contextName = "AuthorizationInteractor.authorization(login:password:):AuthorizationInteractorInput.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "presenter.screenUtilities">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

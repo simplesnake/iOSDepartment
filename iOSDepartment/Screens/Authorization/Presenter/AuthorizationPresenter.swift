@@ -7,8 +7,7 @@
 //
 
 class AuthorizationPresenter: BasePresenter {
-    
-    weak var view: AuthorizationViewInput!
+    var view: AuthorizationViewInput!
     var interactor: AuthorizationInteractorInput!
     weak var router: AuthorizationRouter!
 }
