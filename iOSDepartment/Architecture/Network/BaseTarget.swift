@@ -14,7 +14,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
     let baseURL: URL = URL(string: "http://185.188.183.104:8090/app/api/")!
     //Надо сделать получение параметров из plist.info
 //    let baseURL: URL = PlistManager<BaseURL>().value.url
-    var method: Moya.Method = .get
+    let method: Moya.Method
     let sampleData: Data = Data()
     var headers: [String : String]? {
         return ["Authorization": "Тут токен напрямую из хранилища"]

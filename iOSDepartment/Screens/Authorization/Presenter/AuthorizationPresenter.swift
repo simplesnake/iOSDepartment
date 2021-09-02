@@ -6,6 +6,8 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
+import UIKit
+
 class AuthorizationPresenter: BasePresenter {
     var view: AuthorizationViewInput!
     var interactor: AuthorizationInteractorInput!

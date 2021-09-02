@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
+		F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011A26DBFB3500372820 /* BaseCollectionView.swift */; };
+		F602011D26DC07E700372820 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011C26DC07E700372820 /* PaginationManager.swift */; };
+		F602012026DC13D300372820 /* PaginationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011F26DC13D300372820 /* PaginationRequest.swift */; };
+		F602012226DC13E500372820 /* PaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602012126DC13E500372820 /* PaginationResponse.swift */; };
 		F646592E2511619A00E6D999 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646592D2511619A00E6D999 /* API.swift */; };
 		F6465934251165F000E6D999 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465933251165F000E6D999 /* AuthorizationRequest.swift */; };
 		F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465935251165FC00E6D999 /* AuthorizationResponse.swift */; };
@@ -66,6 +70,10 @@
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
+		F602011A26DBFB3500372820 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		F602011C26DC07E700372820 /* PaginationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
+		F602011F26DC13D300372820 /* PaginationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationRequest.swift; sourceTree = "<group>"; };
+		F602012126DC13E500372820 /* PaginationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationResponse.swift; sourceTree = "<group>"; };
 		F646592D2511619A00E6D999 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F6465933251165F000E6D999 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
 		F6465935251165FC00E6D999 /* AuthorizationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
@@ -159,6 +167,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F602011E26DC139000372820 /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+				F602011F26DC13D300372820 /* PaginationRequest.swift */,
+				F602012126DC13E500372820 /* PaginationResponse.swift */,
+			);
+			path = Pagination;
+			sourceTree = "<group>";
+		};
 		F64659312511659C00E6D999 /* Network models */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +229,7 @@
 		F670E3AA2511611100762513 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F602011E26DC139000372820 /* Pagination */,
 				F646592D2511619A00E6D999 /* API.swift */,
 				F6465937251166FC00E6D999 /* RequestModel.swift */,
 				F64659392511674C00E6D999 /* BaseTarget.swift */,
@@ -264,6 +282,7 @@
 			children = (
 				F6F1204125179E3900F40383 /* PlistManager.swift */,
 				F6F73F4C251E8E53003D92F8 /* StorageManager.swift */,
+				F602011C26DC07E700372820 /* PaginationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -272,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F1204C2517A6A400F40383 /* BaseButton.swift */,
+				F602011A26DBFB3500372820 /* BaseCollectionView.swift */,
 			);
 			path = "Base views";
 			sourceTree = "<group>";
@@ -537,6 +557,8 @@
 				F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */,
 				F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */,
 				F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */,
+				F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */,
+				F602012026DC13D300372820 /* PaginationRequest.swift in Sources */,
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
 				F6F73F8E2520EBDA003D92F8 /* BaseViewInput.swift in Sources */,
 				F6F73F56251FB6E8003D92F8 /* BaseRouter.swift in Sources */,
@@ -546,7 +568,9 @@
 				F6F73F61251FD3BB003D92F8 /* BaseViewController.swift in Sources */,
 				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
+				F602011D26DC07E700372820 /* PaginationManager.swift in Sources */,
 				F6F73F9B2520F02D003D92F8 /* BaseInteractorInput.swift in Sources */,
+				F602012226DC13E500372820 /* PaginationResponse.swift in Sources */,
 				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
 				F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */,

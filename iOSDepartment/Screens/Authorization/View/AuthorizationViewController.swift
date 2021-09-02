@@ -38,6 +38,10 @@ class AuthorizationViewController: BaseViewController {
         super.viewDidLoad()
         print("viewDidLoad")
         setupUI()
+        
+        let collection = BaseCollectionView(frame: CGRect(), collectionViewLayout: UICollectionViewLayout())
+        
+        var pm: PaginationManager = PaginationManager(method: TestMethod2(TestMethod2.Model(requestData: PagReq())), collectionView: collection)
     }
     
     func setupUI() {
@@ -54,5 +58,22 @@ class AuthorizationViewController: BaseViewController {
             make.bottom.equalToSuperview().inset(appearance.buttonBottomMargin)
             make.centerX.equalToSuperview()
         }
+    }
+}
+
+class X {
+    var x: Int?
+    
+    init(x: Int) {
+        self.x = x
+    }
+}
+
+class Y: X {
+    var y: Int?
+    
+    init(x: Int, y: Int) {
+        super.init(x: x)
+        self.y = y
     }
 }
