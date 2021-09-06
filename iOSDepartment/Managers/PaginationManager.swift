@@ -9,7 +9,7 @@
 import UIKit
 
 class TestPaginationManager: PaginationManager<PagReq, PagResp, String> {
-    init(collectionView: BaseCollectionView) {
+    init(collectionView: CollectionWithPagination<String>) {
         let testMethod: TestMethod2 = TestMethod2(TestMethod2.Model(requestData: PagReq()))
         super.init(method: testMethod, collectionView: collectionView, nextPageOnWillDisplay: true, nextPageOffsetPosition: 20)
     }
@@ -18,20 +18,19 @@ class TestPaginationManager: PaginationManager<PagReq, PagResp, String> {
 //TODO: Нужно иметь возможность преобразовывать массив "Data" в модель для таблицы
 class PaginationManager<Request: PaginationRequest, Response: PaginationResponse<Data>, Data: Decodable> {
     
-    private var collectionView: BaseCollectionView {
+    private var collectionView: CollectionWithPagination<Data> {
         didSet {
-            collectionView.numberOfItemsInSection = {
-                [weak self] _, _ in
-                guard let self = self else { return 0 }
-                return self.data.count
-            }
+//            collectionView.numberOfItemsInSection = {
+//                [weak self] _, _ in
+//                guard let self = self else { return 0 }
+//                return self.data.count
+//            }
             
             if nextPageOnWillDisplay {
                 collectionView.willDisplay.append(willDisplayLogic)
             }
         }
     }
-    private var data: [Data] = []
     
     private var limit: Int {
         get { return request.limit }
@@ -48,7 +47,7 @@ class PaginationManager<Request: PaginationRequest, Response: PaginationResponse
     private var nextPageOffsetPosition: Int
     private var nextPageOnWillDisplay: Bool
     private lazy var willDisplayLogic: (UICollectionView, UICollectionViewCell, IndexPath) -> () = {
-        if $2.row >= self.data.count - self.nextPageOffsetPosition {
+        if $2.row >= self.collectionView.data.count - self.nextPageOffsetPosition {
             self.nextPage()
         }
     }
@@ -69,13 +68,13 @@ class PaginationManager<Request: PaginationRequest, Response: PaginationResponse
                 guard let self = self else { return }
                 
                 if self.needRefresh {
-                    self.data = response.data
+                    self.collectionView.data = response.data
                 } else {
-                    self.data.append(contentsOf: response.data)
+                    self.collectionView.data.append(contentsOf: response.data)
                 }
                 
                 self.total = response.total
-                self.offset = self.data.count
+                self.offset = self.collectionView.data.count
                 
                 self.collectionView.reloadData()
             }
@@ -86,7 +85,7 @@ class PaginationManager<Request: PaginationRequest, Response: PaginationResponse
         set { method.model.requestData = newValue }
     }
     
-    init(method: BaseTarget<Request, Response>, collectionView: BaseCollectionView, nextPageOnWillDisplay: Bool = true, nextPageOffsetPosition: Int = 1) {
+    init(method: BaseTarget<Request, Response>, collectionView: CollectionWithPagination<Data>, nextPageOnWillDisplay: Bool = true, nextPageOffsetPosition: Int = 1) {
         
         self.method = method
         

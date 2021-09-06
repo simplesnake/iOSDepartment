@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */; };
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011A26DBFB3500372820 /* BaseCollectionView.swift */; };
 		F602011D26DC07E700372820 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011C26DC07E700372820 /* PaginationManager.swift */; };
@@ -70,6 +71,7 @@
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
+		C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWithPagination.swift; sourceTree = "<group>"; };
 		F602011A26DBFB3500372820 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		F602011C26DC07E700372820 /* PaginationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
 		F602011F26DC13D300372820 /* PaginationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationRequest.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F73FA22520F1C8003D92F8 /* ExampleLoader.swift */,
+				C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */,
 			);
 			path = "Custom views";
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				F6F73F61251FD3BB003D92F8 /* BaseViewController.swift in Sources */,
 				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
+				C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
 				F602011D26DC07E700372820 /* PaginationManager.swift in Sources */,
 				F6F73F9B2520F02D003D92F8 /* BaseInteractorInput.swift in Sources */,
