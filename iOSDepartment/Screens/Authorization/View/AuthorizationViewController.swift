@@ -38,10 +38,6 @@ class AuthorizationViewController: BaseViewController {
         super.viewDidLoad()
         print("viewDidLoad")
         setupUI()
-        
-        let collection = BaseCollectionView(frame: CGRect(), collectionViewLayout: UICollectionViewLayout())
-        
-        var pm: PaginationManager = PaginationManager(method: TestMethod2(TestMethod2.Model(requestData: PagReq())), collectionView: collection)
     }
     
     func setupUI() {
