@@ -1,0 +1,26 @@
+{
+  "name": "iOSBestPractices",
+  "version": "0.0.5",
+  "summary": "Best practices for iOS by Aleksandr Stroev",
+  "description": "Best practices for iOS by Aleksandr Stroev. First time pod creating",
+  "homepage": "https://github.com/simplesnake/iOSBestPractices",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aleksandr Stroev": "simplesnake@mail.ru"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/simplesnake/iOSBestPractices.git",
+    "tag": "0.0.5"
+  },
+  "source_files": [
+    "Sources",
+    "Sources/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "Sources/Exclude"
+}

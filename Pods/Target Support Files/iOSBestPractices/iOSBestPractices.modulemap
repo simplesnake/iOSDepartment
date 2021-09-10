@@ -1,0 +1,6 @@
+framework module iOSBestPractices {
+  umbrella header "iOSBestPractices-umbrella.h"
+
+  export *
+  module * { export * }
+}

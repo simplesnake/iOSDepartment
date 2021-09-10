@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A453E185780A3C4F0A98C91 /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FEB6B85413B7C6D62575B /* Pods_iOSDepartment.framework */; };
 		C96378C026EBA1BC00D1CDE2 /* DialogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */; };
 		C96378C226EBA26200D1CDE2 /* OkDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C126EBA26200D1CDE2 /* OkDialog.swift */; };
 		C96378C526EBA4C500D1CDE2 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C426EBA4C500D1CDE2 /* Appearance.swift */; };
@@ -20,7 +21,6 @@
 		C96378D726EBAE8600D1CDE2 /* BaseFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378D626EBAE8600D1CDE2 /* BaseFont.swift */; };
 		C96378D926EBB7EA00D1CDE2 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378D826EBB7EA00D1CDE2 /* HeaderViewController.swift */; };
 		C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */; };
-		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011A26DBFB3500372820 /* BaseCollectionView.swift */; };
 		F602011D26DC07E700372820 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011C26DC07E700372820 /* PaginationManager.swift */; };
 		F602012026DC13D300372820 /* PaginationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011F26DC13D300372820 /* PaginationRequest.swift */; };
@@ -80,9 +80,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
-		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
+		09D566A9D52FFE2C59422508 /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
+		305FEB6B85413B7C6D62575B /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C8D2FFA254A333C31755B8 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogProtocol.swift; sourceTree = "<group>"; };
 		C96378C126EBA26200D1CDE2 /* OkDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkDialog.swift; sourceTree = "<group>"; };
 		C96378C426EBA4C500D1CDE2 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -121,6 +121,7 @@
 		F6F1204125179E3900F40383 /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		F6F1204C2517A6A400F40383 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F6F1205525192BEF00F40383 /* VerbosePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbosePlugin.swift; sourceTree = "<group>"; };
+		F6F12E6626EEA87A0093A5CC /* iOSBestPractices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSBestPractices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F73F4C251E8E53003D92F8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F6F73F50251FB3EB003D92F8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F6F73F55251FB6E8003D92F8 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
@@ -161,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */,
+				1A453E185780A3C4F0A98C91 /* Pods_iOSDepartment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +175,15 @@
 				F646593D2511685700E6D999 /* AuthorizationNetwork.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		71BECEB98493EE90CABF9396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F12E6626EEA87A0093A5CC /* iOSBestPractices.framework */,
+				305FEB6B85413B7C6D62575B /* Pods_iOSDepartment.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C96378BE26EBA19C00D1CDE2 /* Dialog */ = {
@@ -212,19 +222,11 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
-		CF40D25AB9686B04F2ABDFAA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E669101758F12A0149B8DA9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */,
-				9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */,
+				36C8D2FFA254A333C31755B8 /* Pods-iOSDepartment.debug.xcconfig */,
+				09D566A9D52FFE2C59422508 /* Pods-iOSDepartment.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -308,7 +310,7 @@
 				F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */,
 				F6D2EEFC2506B8DF0098CED8 /* Products */,
 				E669101758F12A0149B8DA9A /* Pods */,
-				CF40D25AB9686B04F2ABDFAA /* Frameworks */,
+				71BECEB98493EE90CABF9396 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -511,11 +513,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6D2EF0F2506B8E40098CED8 /* Build configuration list for PBXNativeTarget "iOSDepartment" */;
 			buildPhases = (
-				1C91F996239075B613A19E23 /* [CP] Check Pods Manifest.lock */,
+				ED3117C016D8216D463541FB /* [CP] Check Pods Manifest.lock */,
 				F6D2EEF72506B8DF0098CED8 /* Sources */,
 				F6D2EEF82506B8DF0098CED8 /* Frameworks */,
 				F6D2EEF92506B8DF0098CED8 /* Resources */,
-				D813F3B3C9EBE25FDCCB1CA2 /* [CP] Embed Pods Frameworks */,
+				FD74FA2F2567F00BD3B99E25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -575,7 +577,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C91F996239075B613A19E23 /* [CP] Check Pods Manifest.lock */ = {
+		ED3117C016D8216D463541FB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -597,7 +599,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D813F3B3C9EBE25FDCCB1CA2 /* [CP] Embed Pods Frameworks */ = {
+		FD74FA2F2567F00BD3B99E25 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -837,9 +839,10 @@
 		};
 		F6D2EF102506B8E40098CED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */;
+			baseConfigurationReference = 36C8D2FFA254A333C31755B8 /* Pods-iOSDepartment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6GT39XDL7;
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
@@ -849,6 +852,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Stroev.iOSDepartment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -856,9 +860,10 @@
 		};
 		F6D2EF112506B8E40098CED8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */;
+			baseConfigurationReference = 09D566A9D52FFE2C59422508 /* Pods-iOSDepartment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6GT39XDL7;
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
@@ -868,6 +873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Stroev.iOSDepartment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

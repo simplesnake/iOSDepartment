@@ -9,5 +9,6 @@ target 'iOSDepartment' do
   pod 'Moya', '~> 13.0'
   pod 'SnapKit', '~> 5.0.0'
   pod 'KeychainAccess'
+  pod 'iOSBestPractices', :git => 'https://github.com/simplesnake/iOSBestPractices'
   
 end

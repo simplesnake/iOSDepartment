@@ -6,6 +6,9 @@
 //  Copyright © 2020 Stroev. All rights reserved.
 //
 
+import Foundation
+import iOSBestPractices
+
 protocol AuthorizationInteractorOutput: BaseInteractorOutput {
     func authorizationSuccess()
     func authorizationDenied()
@@ -15,6 +18,7 @@ extension AuthorizationPresenter: AuthorizationInteractorOutput {
     
     func authorizationSuccess() {
         print("Success!")
+        let q: EmptyClass = EmptyClass()
     }
     
     func authorizationDenied() {

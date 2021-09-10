@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
-  - KeychainAccess (4.2.0)
+  - iOSBestPractices (0.0.5)
+  - KeychainAccess (4.2.2)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -10,6 +11,7 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - iOSBestPractices (from `https://github.com/simplesnake/iOSBestPractices`)
   - KeychainAccess
   - Moya (~> 13.0)
   - SnapKit (~> 5.0.0)
@@ -22,13 +24,23 @@ SPEC REPOS:
     - Result
     - SnapKit
 
+EXTERNAL SOURCES:
+  iOSBestPractices:
+    :git: https://github.com/simplesnake/iOSBestPractices
+
+CHECKOUT OPTIONS:
+  iOSBestPractices:
+    :commit: 48b51067438af18df50a70a7f9dffa4e5d5f6bf1
+    :git: https://github.com/simplesnake/iOSBestPractices
+
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
+  iOSBestPractices: 0f67328f5e7aa4632e86cfa271a16069e281a903
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 0a9b2e7e5a3c6896fc45a991a30fdd45b14f5450
+PODFILE CHECKSUM: 51587a1f815cce255f357101199217bcc56fefb1
 
 COCOAPODS: 1.10.1
