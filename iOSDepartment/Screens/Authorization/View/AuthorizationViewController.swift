@@ -9,15 +9,6 @@
 import UIKit
 import SnapKit
 
-extension AuthorizationViewController {
-    
-    struct Appearance {
-        let buttonBottomMargin: CGFloat = 40
-    }
-    
-    private var appearance: Appearance { return Appearance() }
-}
-
 class AuthorizationViewController: BaseViewController {
     
     var localization: AuthorizationLocalization!
@@ -51,25 +42,8 @@ class AuthorizationViewController: BaseViewController {
 
     func makeConstraints() {
         button.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().inset(appearance.buttonBottomMargin)
+            make.bottom.equalToSuperview().inset(40)
             make.centerX.equalToSuperview()
         }
-    }
-}
-
-class X {
-    var x: Int?
-    
-    init(x: Int) {
-        self.x = x
-    }
-}
-
-class Y: X {
-    var y: Int?
-    
-    init(x: Int, y: Int) {
-        super.init(x: x)
-        self.y = y
     }
 }
