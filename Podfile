@@ -10,4 +10,6 @@ target 'iOSDepartment' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'KeychainAccess'
   
+#  using for BlueToothManager
+#  pod 'SwiftyBluetooth', '~> 3.0.0'
 end
