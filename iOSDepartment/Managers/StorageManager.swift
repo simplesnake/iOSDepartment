@@ -13,6 +13,7 @@ extension StorageManager {
     
     enum Key: String {
         case token
+        case refreshToken
     }
     
     var token: String {
@@ -21,6 +22,15 @@ extension StorageManager {
         }
         get {
             return get(for: Key.token) ?? ""
+        }
+    }
+    
+    var refreshToken: String {
+        set {
+            set(newValue, for: Key.refreshToken)
+        }
+        get {
+            return get(for: Key.refreshToken) ?? ""
         }
     }
 }
