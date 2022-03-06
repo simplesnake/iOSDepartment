@@ -97,7 +97,7 @@ class BaseViewController: UIViewController, BaseViewInput, NavigationProtocol, L
         if toast == nil {
             return
         }
-        UIView.animate(withDuration: TimeInterval(integerLiteral: ToastView.Timings.exit),
+        UIView.animate(withDuration: TimeInterval(integerLiteral: BaseToastView.Timings.exit),
             animations: {
                 
                 self.toast.alpha = 0
@@ -139,7 +139,7 @@ class BaseViewController: UIViewController, BaseViewInput, NavigationProtocol, L
         superView?.layoutSubviews()
         view.layoutIfNeeded()
         
-        UIView.animate(withDuration: ToastView.Timings.enter) {
+        UIView.animate(withDuration: BaseToastView.Timings.enter) {
             view.alpha = 1
             superView?.layoutIfNeeded()
             superView?.layoutSubviews()

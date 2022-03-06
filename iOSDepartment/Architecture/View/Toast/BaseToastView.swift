@@ -23,8 +23,6 @@ final class BaseToastView: UIView {
         view.font = appearance.fonts.regularButtonFontExample
         return view
     }()
-    
-    
 
     var text: String? {
         get {

@@ -81,13 +81,6 @@ extension NavigationProtocol where Self: UIResponder {
             topViewController.present(viewController, animated: animated, completion: completion)
         }
     }
-    
-    //    func toAuth() {
-    //        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-    //        guard let window = appDelegate.window else { return }
-    //        window.rootViewController = vc
-    //        window.makeKeyAndVisible()
-    //    }
 }
 
 
