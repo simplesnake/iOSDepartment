@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Пример кастомного диалога
 final class OkDialog: UIView {
     
     lazy var messageLabel: UILabel = {

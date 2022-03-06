@@ -13,7 +13,7 @@ protocol BaseFontProtocol {
 }
 
 extension BaseFontProtocol {
-    func get(style: BaseFontStyle = .regular,  size: CGFloat = 15) -> UIFont {
+    func get(_ style: BaseFontStyle = .regular, _ size: CGFloat = 15) -> UIFont {
         return UIFont(name: "\(String(describing: name))\(style.value)", size: size)!
     }
 }

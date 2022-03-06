@@ -10,10 +10,10 @@ import UIKit
 
 struct AppearanceFonts {
     //Примеры
-    let bigLabelFontExample = TestFont().get(style: .medium, size: 24)
-    let regularButtonFontExample = TestFont().get(style: .black, size: 18)
+    let bigLabelFontExample = BaseFont().get(.medium, 24)
+    let regularButtonFontExample = BaseFont().get(.black, 18)
 }
 
-class TestFont: BaseFontProtocol {
+class BaseFont: BaseFontProtocol {
     var name: String = UIFont.systemFont(ofSize: 15, weight: .regular).fontName
 }

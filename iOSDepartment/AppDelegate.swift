@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Эта дичь нужна чтобы задать цвет фона кнопки отмены для UIAlertController
+        if let cancelBackgroundViewType = NSClassFromString("_UIAlertControlleriOSActionSheetCancelBackgroundView") as? UIView.Type {
+            cancelBackgroundViewType.appearance().subviewsBackgroundColor = .black
+        }
+        
+        
         return true
     }
 

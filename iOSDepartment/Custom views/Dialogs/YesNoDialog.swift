@@ -6,6 +6,7 @@
 //
 import UIKit
 
+//Пример кастомного диалога
 final class YesNoDialog: UIView {
     
     lazy var messageLabel: UILabel = {
