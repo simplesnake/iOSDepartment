@@ -78,7 +78,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
                 }
                 
                 print("Ошибка: \(response.statusCode)")
-                guard let errorData = String(data: response.data, encoding: .utf8) else {
+                guard let errorData = try? response.map(ErrorResponse.self) else {
 //                                throw MoyaError.stringMapping(self)
                             
 //                guard let errorData = try? response.map(ErrorResponse.self) else {
@@ -88,6 +88,10 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
                     }
                     self.model.onError?(-1, self.unknownError)
                     return
+                }
+                
+                if self.model.showToast {
+                    self.model.view?.showToast("\(errorData.message.localizeError)")
                 }
                 
 //                Обычно это ошибка протухшего токена
@@ -104,7 +108,7 @@ class BaseTarget<T1: Encodable, T2: Decodable>: TargetType {
                 
                 
                 
-                self.model.onError?(response.statusCode, ErrorResponse(message: errorData, details: ""))
+                self.model.onError?(response.statusCode, errorData)
                 
             case .failure(let error):
                 print(error.errorDescription ?? "Unknown error")

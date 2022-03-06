@@ -15,6 +15,6 @@ protocol MultipartRequest {
 }
 
 struct ErrorResponse : Decodable { //Эту структуру надо согласовывать с сервером
-    var message : String?
+    var message : String
     var details : String?
 }
