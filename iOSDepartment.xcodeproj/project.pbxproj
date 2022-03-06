@@ -27,6 +27,32 @@
 		6C46F5B427D4BDFB006515AB /* MaskedTextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F5B327D4BDFB006515AB /* MaskedTextFieldWithTitle.swift */; };
 		6C82A07C27D4B21100969F22 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A07B27D4B21100969F22 /* BaseTextView.swift */; };
 		6C82A07F27D4B24300969F22 /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A07E27D4B24300969F22 /* BaseCollectionCell.swift */; };
+		6C82A09027D4C15F00969F22 /* CameraAndGaleryWithCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A08F27D4C15F00969F22 /* CameraAndGaleryWithCrop.swift */; };
+		6C82A0AF27D4C1A000969F22 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C82A09427D4C1A000969F22 /* CameraViewAssets.xcassets */; };
+		6C82A0B027D4C1A000969F22 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09627D4C1A000969F22 /* CroppingParameters.swift */; };
+		6C82A0B127D4C1A000969F22 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09727D4C1A000969F22 /* Utilities.swift */; };
+		6C82A0B227D4C1A000969F22 /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09827D4C1A000969F22 /* CameraGlobals.swift */; };
+		6C82A0B327D4C1A000969F22 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09927D4C1A000969F22 /* SingleImageFetcher.swift */; };
+		6C82A0B427D4C1A000969F22 /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09A27D4C1A000969F22 /* CameraShot.swift */; };
+		6C82A0B527D4C1A000969F22 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09B27D4C1A000969F22 /* SingleImageSaver.swift */; };
+		6C82A0B627D4C1A000969F22 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09C27D4C1A000969F22 /* VolumeControl.swift */; };
+		6C82A0B727D4C1A000969F22 /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09D27D4C1A000969F22 /* PhotoLibraryAuthorizer.swift */; };
+		6C82A0B827D4C1A000969F22 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09E27D4C1A000969F22 /* UIViewExtensions.swift */; };
+		6C82A0B927D4C1A000969F22 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A09F27D4C1A000969F22 /* UIButtonExtensions.swift */; };
+		6C82A0BA27D4C1A000969F22 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A027D4C1A000969F22 /* ImageFetcher.swift */; };
+		6C82A0BB27D4C1A000969F22 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C82A0A127D4C1A000969F22 /* CameraView.strings */; };
+		6C82A0BC27D4C1A000969F22 /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A327D4C1A000969F22 /* CameraViewControllerConstraint.swift */; };
+		6C82A0BD27D4C1A000969F22 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A427D4C1A000969F22 /* PhotoLibraryViewController.swift */; };
+		6C82A0BE27D4C1A000969F22 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A527D4C1A000969F22 /* ConfirmViewController.swift */; };
+		6C82A0BF27D4C1A000969F22 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A627D4C1A000969F22 /* CameraViewController.swift */; };
+		6C82A0C027D4C1A000969F22 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C82A0A727D4C1A000969F22 /* ConfirmViewController.xib */; };
+		6C82A0C127D4C1A000969F22 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0A927D4C1A000969F22 /* CameraView.swift */; };
+		6C82A0C227D4C1A000969F22 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0AA27D4C1A000969F22 /* CropOverlay.swift */; };
+		6C82A0C327D4C1A000969F22 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0AB27D4C1A000969F22 /* PermissionsView.swift */; };
+		6C82A0C427D4C1A000969F22 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0AC27D4C1A000969F22 /* ImageCell.swift */; };
+		6C82A0D027D4C3A500969F22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C82A0CB27D4C3A500969F22 /* Localizable.strings */; };
+		6C82A0D227D4C3A500969F22 /* ErrorLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C82A0CE27D4C3A500969F22 /* ErrorLocalizable.strings */; };
+		6C82A0D327D4C3A500969F22 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A0CF27D4C3A500969F22 /* Localizable.swift */; };
 		C96378C026EBA1BC00D1CDE2 /* DialogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */; };
 		C96378C226EBA26200D1CDE2 /* OkDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C126EBA26200D1CDE2 /* OkDialog.swift */; };
 		C96378C526EBA4C500D1CDE2 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C426EBA4C500D1CDE2 /* Appearance.swift */; };
@@ -122,6 +148,33 @@
 		6C46F5B327D4BDFB006515AB /* MaskedTextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedTextFieldWithTitle.swift; sourceTree = "<group>"; };
 		6C82A07B27D4B21100969F22 /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
 		6C82A07E27D4B24300969F22 /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		6C82A08F27D4C15F00969F22 /* CameraAndGaleryWithCrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAndGaleryWithCrop.swift; sourceTree = "<group>"; };
+		6C82A09427D4C1A000969F22 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		6C82A09627D4C1A000969F22 /* CroppingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CroppingParameters.swift; sourceTree = "<group>"; };
+		6C82A09727D4C1A000969F22 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6C82A09827D4C1A000969F22 /* CameraGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraGlobals.swift; sourceTree = "<group>"; };
+		6C82A09927D4C1A000969F22 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageFetcher.swift; sourceTree = "<group>"; };
+		6C82A09A27D4C1A000969F22 /* CameraShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShot.swift; sourceTree = "<group>"; };
+		6C82A09B27D4C1A000969F22 /* SingleImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageSaver.swift; sourceTree = "<group>"; };
+		6C82A09C27D4C1A000969F22 /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		6C82A09D27D4C1A000969F22 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		6C82A09E27D4C1A000969F22 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		6C82A09F27D4C1A000969F22 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		6C82A0A027D4C1A000969F22 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		6C82A0A127D4C1A000969F22 /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
+		6C82A0A327D4C1A000969F22 /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		6C82A0A427D4C1A000969F22 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		6C82A0A527D4C1A000969F22 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		6C82A0A627D4C1A000969F22 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6C82A0A727D4C1A000969F22 /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		6C82A0A927D4C1A000969F22 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		6C82A0AA27D4C1A000969F22 /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		6C82A0AB27D4C1A000969F22 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		6C82A0AC27D4C1A000969F22 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		6C82A0AE27D4C1A000969F22 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		6C82A0CB27D4C3A500969F22 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6C82A0CE27D4C3A500969F22 /* ErrorLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ErrorLocalizable.strings; sourceTree = "<group>"; };
+		6C82A0CF27D4C3A500969F22 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogProtocol.swift; sourceTree = "<group>"; };
@@ -303,6 +356,111 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		6C82A08D27D4C12C00969F22 /* CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A09227D4C1A000969F22 /* ALCameraViewController-master */,
+				6C82A08E27D4C15F00969F22 /* CameraAndGaleryWithCrop */,
+			);
+			path = CameraManager;
+			sourceTree = "<group>";
+		};
+		6C82A08E27D4C15F00969F22 /* CameraAndGaleryWithCrop */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A08F27D4C15F00969F22 /* CameraAndGaleryWithCrop.swift */,
+			);
+			path = CameraAndGaleryWithCrop;
+			sourceTree = "<group>";
+		};
+		6C82A09227D4C1A000969F22 /* ALCameraViewController-master */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A09327D4C1A000969F22 /* ALCameraViewController */,
+				6C82A0AD27D4C1A000969F22 /* CameraViewController */,
+			);
+			path = "ALCameraViewController-master";
+			sourceTree = "<group>";
+		};
+		6C82A09327D4C1A000969F22 /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A09427D4C1A000969F22 /* CameraViewAssets.xcassets */,
+				6C82A09527D4C1A000969F22 /* Utilities */,
+				6C82A0A127D4C1A000969F22 /* CameraView.strings */,
+				6C82A0A227D4C1A000969F22 /* ViewController */,
+				6C82A0A827D4C1A000969F22 /* Views */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		6C82A09527D4C1A000969F22 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A09627D4C1A000969F22 /* CroppingParameters.swift */,
+				6C82A09727D4C1A000969F22 /* Utilities.swift */,
+				6C82A09827D4C1A000969F22 /* CameraGlobals.swift */,
+				6C82A09927D4C1A000969F22 /* SingleImageFetcher.swift */,
+				6C82A09A27D4C1A000969F22 /* CameraShot.swift */,
+				6C82A09B27D4C1A000969F22 /* SingleImageSaver.swift */,
+				6C82A09C27D4C1A000969F22 /* VolumeControl.swift */,
+				6C82A09D27D4C1A000969F22 /* PhotoLibraryAuthorizer.swift */,
+				6C82A09E27D4C1A000969F22 /* UIViewExtensions.swift */,
+				6C82A09F27D4C1A000969F22 /* UIButtonExtensions.swift */,
+				6C82A0A027D4C1A000969F22 /* ImageFetcher.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6C82A0A227D4C1A000969F22 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A0A327D4C1A000969F22 /* CameraViewControllerConstraint.swift */,
+				6C82A0A427D4C1A000969F22 /* PhotoLibraryViewController.swift */,
+				6C82A0A527D4C1A000969F22 /* ConfirmViewController.swift */,
+				6C82A0A627D4C1A000969F22 /* CameraViewController.swift */,
+				6C82A0A727D4C1A000969F22 /* ConfirmViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6C82A0A827D4C1A000969F22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A0A927D4C1A000969F22 /* CameraView.swift */,
+				6C82A0AA27D4C1A000969F22 /* CropOverlay.swift */,
+				6C82A0AB27D4C1A000969F22 /* PermissionsView.swift */,
+				6C82A0AC27D4C1A000969F22 /* ImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C82A0AD27D4C1A000969F22 /* CameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A0AE27D4C1A000969F22 /* CameraViewController.h */,
+			);
+			path = CameraViewController;
+			sourceTree = "<group>";
+		};
+		6C82A0CA27D4C3A500969F22 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A0CC27D4C3A500969F22 /* Errors */,
+				6C82A0CB27D4C3A500969F22 /* Localizable.strings */,
+				6C82A0CF27D4C3A500969F22 /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		6C82A0CC27D4C3A500969F22 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6C82A0CE27D4C3A500969F22 /* ErrorLocalizable.strings */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		C96378BE26EBA19C00D1CDE2 /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +608,7 @@
 		F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */ = {
 			isa = PBXGroup;
 			children = (
+				6C82A0CA27D4C3A500969F22 /* Localization */,
 				F6F73F9D2520F0ED003D92F8 /* Custom views */,
 				F6F1204B2517A5CD00F40383 /* Base views */,
 				F6F1204025179D8000F40383 /* Managers */,
@@ -469,6 +628,7 @@
 		F6F1204025179D8000F40383 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				6C82A08D27D4C12C00969F22 /* CameraManager */,
 				F6F1204125179E3900F40383 /* PlistManager.swift */,
 				F6F73F4C251E8E53003D92F8 /* StorageManager.swift */,
 				F602011C26DC07E700372820 /* PaginationManager.swift */,
@@ -701,10 +861,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D2EF0B2506B8E40098CED8 /* LaunchScreen.storyboard in Resources */,
+				6C82A0BB27D4C1A000969F22 /* CameraView.strings in Resources */,
 				6C46F5A327D4B6CA006515AB /* ImageScreenLocalization.strings in Resources */,
 				F6FED2352506DB73007EF1F8 /* AuthorizationLocalization.strings in Resources */,
+				6C82A0D027D4C3A500969F22 /* Localizable.strings in Resources */,
 				F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */,
+				6C82A0D227D4C3A500969F22 /* ErrorLocalizable.strings in Resources */,
+				6C82A0AF27D4C1A000969F22 /* CameraViewAssets.xcassets in Resources */,
 				F6FED23A2506DB8A007EF1F8 /* AuthorizationLocalization.strings in Resources */,
+				6C82A0C027D4C1A000969F22 /* ConfirmViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +925,7 @@
 				C96378C926EBA4F900D1CDE2 /* AppearanceFonts.swift in Sources */,
 				F6F73F9F2520F130003D92F8 /* BaseLoader.swift in Sources */,
 				6C82A07C27D4B21100969F22 /* BaseTextView.swift in Sources */,
+				6C82A0BA27D4C1A000969F22 /* ImageFetcher.swift in Sources */,
 				F6F73FA32520F1C8003D92F8 /* ExampleLoader.swift in Sources */,
 				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
 				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
@@ -779,18 +945,26 @@
 				F6F73F56251FB6E8003D92F8 /* BaseRouter.swift in Sources */,
 				F6F73F7C2520EACC003D92F8 /* LoaderProtocol.swift in Sources */,
 				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
+				6C82A0C327D4C1A000969F22 /* PermissionsView.swift in Sources */,
 				6C46F59A27D4B6CA006515AB /* ImageScreenCallbackDelegate.swift in Sources */,
 				6C46F59D27D4B6CA006515AB /* ImageScreenViewOutput.swift in Sources */,
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				6C46F59E27D4B6CA006515AB /* ImageScreenViewController.swift in Sources */,
 				F6F73F61251FD3BB003D92F8 /* BaseViewController.swift in Sources */,
+				6C82A0B527D4C1A000969F22 /* SingleImageSaver.swift in Sources */,
+				6C82A0BD27D4C1A000969F22 /* PhotoLibraryViewController.swift in Sources */,
 				6C46F59927D4B6CA006515AB /* ImageScreenPresenter.swift in Sources */,
 				6C82A07F27D4B24300969F22 /* BaseCollectionCell.swift in Sources */,
 				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
+				6C82A0B227D4C1A000969F22 /* CameraGlobals.swift in Sources */,
 				C96378D926EBB7EA00D1CDE2 /* HeaderViewController.swift in Sources */,
+				6C82A0C227D4C1A000969F22 /* CropOverlay.swift in Sources */,
 				C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
+				6C82A0B627D4C1A000969F22 /* VolumeControl.swift in Sources */,
 				F602011D26DC07E700372820 /* PaginationManager.swift in Sources */,
+				6C82A0BC27D4C1A000969F22 /* CameraViewControllerConstraint.swift in Sources */,
+				6C82A0B727D4C1A000969F22 /* PhotoLibraryAuthorizer.swift in Sources */,
 				6C46F5A227D4B6CA006515AB /* ImageScreenInteractorOutput.swift in Sources */,
 				F6F73F9B2520F02D003D92F8 /* BaseInteractorInput.swift in Sources */,
 				6C46F57F27D4B4B6006515AB /* BlueToothManager.swift in Sources */,
@@ -801,19 +975,25 @@
 				C96378D026EBAA8B00D1CDE2 /* YesNoDialog.swift in Sources */,
 				6C46F5A127D4B6CA006515AB /* ImageScreenInteractorInput.swift in Sources */,
 				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
+				6C82A09027D4C15F00969F22 /* CameraAndGaleryWithCrop.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
+				6C82A0B127D4C1A000969F22 /* Utilities.swift in Sources */,
 				6C46F5B427D4BDFB006515AB /* MaskedTextFieldWithTitle.swift in Sources */,
+				6C82A0BE27D4C1A000969F22 /* ConfirmViewController.swift in Sources */,
 				F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */,
 				C9AB746927D4BA14003F8BE0 /* UIAlertController+Extensions.swift in Sources */,
 				6C46F59C27D4B6CA006515AB /* ImageScreenViewInput.swift in Sources */,
 				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
 				F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */,
 				6C46F5A427D4B6CA006515AB /* ImageScreenLocalization.swift in Sources */,
+				6C82A0B327D4C1A000969F22 /* SingleImageFetcher.swift in Sources */,
+				6C82A0C127D4C1A000969F22 /* CameraView.swift in Sources */,
 				F6F73F5C251FB9B0003D92F8 /* UIApplication+Extensions.swift in Sources */,
 				F6F73F792520EA99003D92F8 /* LoaderViewProtocol.swift in Sources */,
 				F6F1204225179E3900F40383 /* PlistManager.swift in Sources */,
 				F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */,
 				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
+				6C82A0D327D4C3A500969F22 /* Localizable.swift in Sources */,
 				F6F73F852520EB73003D92F8 /* ToastProtocol.swift in Sources */,
 				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
 				F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */,
@@ -828,18 +1008,24 @@
 				F6F73F51251FB3EB003D92F8 /* UIViewController+Extensions.swift in Sources */,
 				F6F73F59251FB70A003D92F8 /* NavigationProtocol.swift in Sources */,
 				F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */,
+				6C82A0B427D4C1A000969F22 /* CameraShot.swift in Sources */,
 				F646592E2511619A00E6D999 /* API.swift in Sources */,
 				F6F73F742520A2EF003D92F8 /* UIView+Extensions.swift in Sources */,
 				6C46F59F27D4B6CA006515AB /* ImageScreenData.swift in Sources */,
+				6C82A0C427D4C1A000969F22 /* ImageCell.swift in Sources */,
 				F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */,
 				F6F73F962520EE60003D92F8 /* BaseInteractorOutput.swift in Sources */,
 				F6465938251166FC00E6D999 /* RequestModel.swift in Sources */,
 				C96378D226EBABC600D1CDE2 /* BaseTextField.swift in Sources */,
+				6C82A0B827D4C1A000969F22 /* UIViewExtensions.swift in Sources */,
 				C96378C226EBA26200D1CDE2 /* OkDialog.swift in Sources */,
 				C96378D726EBAE8600D1CDE2 /* BaseFont.swift in Sources */,
+				6C82A0B027D4C1A000969F22 /* CroppingParameters.swift in Sources */,
 				F6F73F892520EBB2003D92F8 /* BaseViewOutput.swift in Sources */,
 				6C46F59B27D4B6CA006515AB /* ImageScreenNetwork.swift in Sources */,
+				6C82A0BF27D4C1A000969F22 /* CameraViewController.swift in Sources */,
 				F646593C251167FE00E6D999 /* BaseNetworkModels.swift in Sources */,
+				6C82A0B927D4C1A000969F22 /* UIButtonExtensions.swift in Sources */,
 				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
 				F6465934251165F000E6D999 /* AuthorizationRequest.swift in Sources */,
 			);
@@ -996,8 +1182,9 @@
 			baseConfigurationReference = AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z6GT39XDL7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1005,6 +1192,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Stroev.iOSDepartment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1015,8 +1203,9 @@
 			baseConfigurationReference = 9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z6GT39XDL7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1024,6 +1213,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Stroev.iOSDepartment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
