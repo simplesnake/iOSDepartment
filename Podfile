@@ -9,6 +9,7 @@ target 'iOSDepartment' do
   pod 'Moya', '~> 13.0'
   pod 'SnapKit', '~> 5.0.0'
   pod 'KeychainAccess'
+  pod 'Kingfisher'
   
 #  using for BlueToothManager
 #  pod 'SwiftyBluetooth', '~> 3.0.0'

@@ -10,7 +10,7 @@ class AuthorizationAssembly: BaseAssembly {
     
     static func assemble(data: AuthorizationData? = nil) -> AuthorizationViewController {
         let view = AuthorizationViewController()
-        let router = AuthorizationRouter()
+        let router = AuthorizationRouter(view)
         let presenter = AuthorizationPresenter()
         let localization = AuthorizationLocalization()
         let network = AuthorizationNetwork()

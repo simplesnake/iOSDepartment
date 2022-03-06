@@ -12,9 +12,9 @@ class BaseRouter: NSObject {
     
     weak var navigation: NavigationProtocol!
     
-//    init(navigation: NavigationProtocol) {
-//        self.navigation = view
-//    }
+    init(_ navigation: NavigationProtocol) {
+        self.navigation = navigation
+    }
     
     func back(over: Int = 0, complition: (() -> ())? = nil) {
         removePreviousScreens(over)
