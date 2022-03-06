@@ -83,7 +83,6 @@
 		F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594525116BC600E6D999 /* AuthorizationAssembly.swift */; };
 		F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594725116C2A00E6D999 /* AuthorizationRouter.swift */; };
 		F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594925116C4500E6D999 /* AuthorizationPresenter.swift */; };
-		F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
 		F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */; };
 		F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D2EF072506B8E40098CED8 /* Assets.xcassets */; };
@@ -205,7 +204,6 @@
 		F646594525116BC600E6D999 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
 		F646594725116C2A00E6D999 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
 		F646594925116C4500E6D999 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
-		F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCallbackDelegate.swift; sourceTree = "<group>"; };
 		F6D2EEFB2506B8DF0098CED8 /* iOSDepartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDepartment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -534,7 +532,6 @@
 			isa = PBXGroup;
 			children = (
 				F646594925116C4500E6D999 /* AuthorizationPresenter.swift */,
-				F646594B2511701600E6D999 /* AuthorizationCallbackDelegate.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -981,7 +978,6 @@
 				F6F73F5C251FB9B0003D92F8 /* UIApplication+Extensions.swift in Sources */,
 				F6F73F792520EA99003D92F8 /* LoaderViewProtocol.swift in Sources */,
 				F6F1204225179E3900F40383 /* PlistManager.swift in Sources */,
-				F646594C2511701600E6D999 /* AuthorizationCallbackDelegate.swift in Sources */,
 				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
 				6C82A0D327D4C3A500969F22 /* Localizable.swift in Sources */,
 				F6F73F852520EB73003D92F8 /* ToastProtocol.swift in Sources */,

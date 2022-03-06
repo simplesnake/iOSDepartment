@@ -11,9 +11,11 @@ import SnapKit
 
 class AuthorizationViewController: BaseViewController {
     
+    //MARK: - архитектура
     var localization: AuthorizationLocalization!
     var presenter: AuthorizationViewOutput!
     
+    //MARK: - элементы UI
     private lazy var button: BaseButton = {
         let button = BaseButton()
         button.setTitle("Жми сюда", for: .normal)
@@ -25,12 +27,17 @@ class AuthorizationViewController: BaseViewController {
         return button
     }()
     
+    //MARK: - переменные
+    
+    
+    //MARK: - жизненный цикл контроллера
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
         setupUI()
     }
     
+    
+    //MARK: - настройка UI
     func setupUI() {
         addSubviews()
         makeConstraints()
@@ -46,4 +53,6 @@ class AuthorizationViewController: BaseViewController {
             make.centerX.equalToSuperview()
         }
     }
+    
+    //MARK: - методы и функции
 }

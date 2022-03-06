@@ -19,8 +19,6 @@ class AuthorizationAssembly: BaseAssembly {
         view.presenter = presenter
         view.localization = localization
         
-        router.navigation = view
-        
         presenter.view = view
         presenter.screenUtilities = view
         presenter.interactor = interactor
