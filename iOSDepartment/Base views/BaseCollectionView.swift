@@ -16,6 +16,8 @@ class BaseCollectionView: UICollectionView {
     var numberOfItemsInSection: ((UICollectionView, Int) -> Int)?
     var cellForItemAt: ((UICollectionView, IndexPath) -> UICollectionViewCell)?
     var willDisplay: [(UICollectionView, UICollectionViewCell, IndexPath) -> ()] = []
+    var didSelectItemAt: ((BaseCollectionView, IndexPath) -> ())?
+    var insetForSection: ((UICollectionView, UICollectionViewLayout, Int)  -> UIEdgeInsets)?
     
     override var contentSize: CGSize {
         didSet {
@@ -30,7 +32,7 @@ class BaseCollectionView: UICollectionView {
         return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
     }
     
-    init(frame: CGRect, collectionViewLayout: UICollectionViewLayout, cellsForRegistration: [UITableViewCell.Type] = []) {
+    init(frame: CGRect, collectionViewLayout: UICollectionViewLayout, cellsForRegistration: [BaseCollectionCell.Type] = []) {
         super.init(frame: frame, collectionViewLayout: collectionViewLayout)
         delegate = self
         dataSource = self
@@ -43,13 +45,11 @@ class BaseCollectionView: UICollectionView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
-    func registerNib(_ cellType: UITableViewCell.Type) {
+    func registerNib(_ cellType: BaseCollectionCell.Type) {
         register(UINib(nibName: cellType.className, bundle: nil), forCellWithReuseIdentifier: cellType.className)
     }
 
-    func register<Cell: UITableViewCell>(_ type: Cell.Type) {
+    func register<Cell: BaseCollectionCell>(_ type: Cell.Type) {
         register(type, forCellWithReuseIdentifier: type.className)
     }
 
@@ -61,11 +61,11 @@ class BaseCollectionView: UICollectionView {
         register(UINib(nibName: type.className, bundle: nil), forCellWithReuseIdentifier: type.className)
     }
 
-    func dequeue<Cell: UICollectionViewCell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell {
+    func dequeue<Cell: BaseCollectionCell>(_ cell: Cell.Type, for indexPath: IndexPath) -> Cell {
         return dequeueReusableCell(withReuseIdentifier: Cell.className, for: indexPath) as! Cell
     }
 
-    func dequeue<Cell: UICollectionViewCell>(_ cell: Cell.Type, for row: Int, in section: Int = 0) -> Cell {
+    func dequeue<Cell: BaseCollectionCell>(_ cell: Cell.Type, for row: Int, in section: Int = 0) -> Cell {
         return dequeue(cell, for: IndexPath(row: row, section: section))
     }
     
@@ -73,7 +73,9 @@ class BaseCollectionView: UICollectionView {
 
 extension BaseCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return sizeForItemAt?(collectionView, collectionViewLayout, indexPath) ?? CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 5)//Значение по умолчанию, параметры ширины и высоты не несут смысловой нагрузки
+        return sizeForItemAt?(collectionView, collectionViewLayout, indexPath) ??  CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 5)//Значение по умолчанию, параметры ширины и высоты не несут смысловой нагрузки
+        
+        //UICollectionViewFlowLayout.automaticSize
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -81,6 +83,14 @@ extension BaseCollectionView: UICollectionViewDelegateFlowLayout {
             closure in
             closure(collectionView, cell, indexPath)
         })
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        didSelectItemAt?(self, indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return insetForSection?(collectionView, collectionViewLayout, section) ?? UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -91,6 +101,6 @@ extension BaseCollectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return cellForItemAt?(collectionView, indexPath) ?? UICollectionViewCell()
+        return cellForItemAt?(collectionView, indexPath) ?? BaseCollectionCell()
     }
 }
