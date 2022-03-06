@@ -22,16 +22,18 @@ class BaseTextField: UITextField {
     
     var textFieldDidBeginEditing: ((BaseTextField, String) -> ())?
     var textFieldDidEndEditing: ((BaseTextField, String) -> ())?
+    var textFieldDidChangeSelection: ((BaseTextField, String) -> ())?
     
     var limitOfSymbols: ((Int) -> Bool)?//пока не реализовано
     
     var nextTextField: UITextField?
     var onNextTextField: ((UITextField, UITextField, String) -> ())?
     var onReturn: (() -> ())?
+    var onShouldChangeCharactersIn: ((UITextField, NSRange, String) -> Bool)?
+    var textFieldShouldEndEditing: ((UITextField) -> Bool)?
+    var onDeleteBackward: (() -> ())?
     
-    var maskedHolder: ((UITextField, NSRange, String) -> ())?
-    
-    override init(frame: CGRect){
+    override init(frame: CGRect = CGRect.zero){
         super.init(frame: frame)
         delegate = self
     }
@@ -42,7 +44,12 @@ class BaseTextField: UITextField {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        onDeleteBackward?()
+    }
+    
+    override func deleteBackward() {
+        super.deleteBackward()
+        onDeleteBackward?()
     }
 }
 
@@ -54,6 +61,10 @@ extension BaseTextField: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textFieldDidEndEditing?(self, text ?? "")
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        textFieldDidChangeSelection?(self, text ?? "")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -70,11 +81,7 @@ extension BaseTextField: UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if maskedHolder == nil {
-            return true
-        }
-        maskedHolder?(textField, range, string)
-        return false
+        return onShouldChangeCharactersIn?(textField, range, string) ?? true
     }
     
     func removeButtonOnKeyboard() {
