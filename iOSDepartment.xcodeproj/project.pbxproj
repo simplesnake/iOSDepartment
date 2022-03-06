@@ -67,6 +67,8 @@
 		C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */; };
 		C9AB746927D4BA14003F8BE0 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB746827D4BA13003F8BE0 /* UIAlertController+Extensions.swift */; };
 		C9AB746B27D4D0B9003F8BE0 /* BaseToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB746A27D4D0B9003F8BE0 /* BaseToastView.swift */; };
+		C9AB746E27D4D91B003F8BE0 /* ExampleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB746D27D4D91B003F8BE0 /* ExampleCollection.swift */; };
+		C9AB747127D4D932003F8BE0 /* ExampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB747027D4D932003F8BE0 /* ExampleCollectionCell.swift */; };
 		CCE18E00D8E0CF3B5B62DB8A /* Pods_iOSDepartment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */; };
 		F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011A26DBFB3500372820 /* BaseCollectionView.swift */; };
 		F602011D26DC07E700372820 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602011C26DC07E700372820 /* PaginationManager.swift */; };
@@ -189,6 +191,8 @@
 		C98E8C3526E62D8A007F652B /* CollectionWithPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWithPagination.swift; sourceTree = "<group>"; };
 		C9AB746827D4BA13003F8BE0 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		C9AB746A27D4D0B9003F8BE0 /* BaseToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseToastView.swift; sourceTree = "<group>"; };
+		C9AB746D27D4D91B003F8BE0 /* ExampleCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCollection.swift; sourceTree = "<group>"; };
+		C9AB747027D4D932003F8BE0 /* ExampleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCollectionCell.swift; sourceTree = "<group>"; };
 		F602011A26DBFB3500372820 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		F602011C26DC07E700372820 /* PaginationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationManager.swift; sourceTree = "<group>"; };
 		F602011F26DC13D300372820 /* PaginationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationRequest.swift; sourceTree = "<group>"; };
@@ -485,6 +489,23 @@
 			path = Dialogs;
 			sourceTree = "<group>";
 		};
+		C9AB746C27D4D8E3003F8BE0 /* ExampleCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB746F27D4D91F003F8BE0 /* Cells */,
+				C9AB746D27D4D91B003F8BE0 /* ExampleCollection.swift */,
+			);
+			path = ExampleCollection;
+			sourceTree = "<group>";
+		};
+		C9AB746F27D4D91F003F8BE0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9AB747027D4D932003F8BE0 /* ExampleCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CF40D25AB9686B04F2ABDFAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +716,7 @@
 		F6F73F9D2520F0ED003D92F8 /* Custom views */ = {
 			isa = PBXGroup;
 			children = (
+				C9AB746C27D4D8E3003F8BE0 /* ExampleCollection */,
 				C96378CE26EBAA5A00D1CDE2 /* Dialogs */,
 				6C46F58127D4B6CA006515AB /* ImageScreen */,
 				F6F73FA22520F1C8003D92F8 /* ExampleLoader.swift */,
@@ -972,6 +994,7 @@
 				6C46F59C27D4B6CA006515AB /* ImageScreenViewInput.swift in Sources */,
 				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
 				F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */,
+				C9AB747127D4D932003F8BE0 /* ExampleCollectionCell.swift in Sources */,
 				6C46F5A427D4B6CA006515AB /* ImageScreenLocalization.swift in Sources */,
 				6C82A0B327D4C1A000969F22 /* SingleImageFetcher.swift in Sources */,
 				6C82A0C127D4C1A000969F22 /* CameraView.swift in Sources */,
@@ -982,6 +1005,7 @@
 				6C82A0D327D4C3A500969F22 /* Localizable.swift in Sources */,
 				F6F73F852520EB73003D92F8 /* ToastProtocol.swift in Sources */,
 				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
+				C9AB746E27D4D91B003F8BE0 /* ExampleCollection.swift in Sources */,
 				F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */,
 				F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */,
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,

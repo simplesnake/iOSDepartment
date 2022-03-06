@@ -15,6 +15,9 @@ class AuthorizationViewController: BaseViewController {
     var localization: AuthorizationLocalization!
     var presenter: AuthorizationViewOutput!
     
+    //MARK: - структуры и перечисления
+    
+    
     //MARK: - элементы UI
     private lazy var button: BaseButton = {
         let button = BaseButton()
