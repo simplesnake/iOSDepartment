@@ -9,5 +9,5 @@
 import Foundation
 
 protocol BaseInteractorOutput: NSObject {
-    var screenUtilities: (LoaderProtocol & ToastProtocol)? { get }
+    var screenUtilities: (LoaderProtocol & ToastProtocol & DialogProtocol)? { get }
 }
