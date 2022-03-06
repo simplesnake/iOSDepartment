@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C82A07C27D4B21100969F22 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A07B27D4B21100969F22 /* BaseTextView.swift */; };
+		6C82A07F27D4B24300969F22 /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C82A07E27D4B24300969F22 /* BaseCollectionCell.swift */; };
 		C96378C026EBA1BC00D1CDE2 /* DialogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */; };
 		C96378C226EBA26200D1CDE2 /* OkDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C126EBA26200D1CDE2 /* OkDialog.swift */; };
 		C96378C526EBA4C500D1CDE2 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96378C426EBA4C500D1CDE2 /* Appearance.swift */; };
@@ -81,6 +83,8 @@
 
 /* Begin PBXFileReference section */
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C82A07B27D4B21100969F22 /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		6C82A07E27D4B24300969F22 /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
 		9BE8FE6A547BF8EEF29F3E6A /* Pods-iOSDepartment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.release.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.release.xcconfig"; sourceTree = "<group>"; };
 		AF6AE9B8D14168BC25D11A11 /* Pods-iOSDepartment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDepartment.debug.xcconfig"; path = "Target Support Files/Pods-iOSDepartment/Pods-iOSDepartment.debug.xcconfig"; sourceTree = "<group>"; };
 		C96378BF26EBA1BC00D1CDE2 /* DialogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogProtocol.swift; sourceTree = "<group>"; };
@@ -356,6 +360,8 @@
 				F602011A26DBFB3500372820 /* BaseCollectionView.swift */,
 				C96378D126EBABC600D1CDE2 /* BaseTextField.swift */,
 				C96378D826EBB7EA00D1CDE2 /* HeaderViewController.swift */,
+				6C82A07B27D4B21100969F22 /* BaseTextView.swift */,
+				6C82A07E27D4B24300969F22 /* BaseCollectionCell.swift */,
 			);
 			path = "Base views";
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 			files = (
 				C96378C926EBA4F900D1CDE2 /* AppearanceFonts.swift in Sources */,
 				F6F73F9F2520F130003D92F8 /* BaseLoader.swift in Sources */,
+				6C82A07C27D4B21100969F22 /* BaseTextView.swift in Sources */,
 				F6F73FA32520F1C8003D92F8 /* ExampleLoader.swift in Sources */,
 				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
 				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
@@ -642,6 +649,7 @@
 				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
 				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				F6F73F61251FD3BB003D92F8 /* BaseViewController.swift in Sources */,
+				6C82A07F27D4B24300969F22 /* BaseCollectionCell.swift in Sources */,
 				F6F73F4D251E8E53003D92F8 /* StorageManager.swift in Sources */,
 				C96378D926EBB7EA00D1CDE2 /* HeaderViewController.swift in Sources */,
 				C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */,
