@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExampleCollectionCell: UICollectionViewCell {
+class ExampleCollectionCell: BaseCollectionCell {
 
     //MARK: - структуры и перечисления
     struct Data {
@@ -43,7 +43,6 @@ class ExampleCollectionCell: UICollectionViewCell {
     }
     
     func addSubviews() {
-        addSubview()
     }
     
     func addConstraints() {

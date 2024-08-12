@@ -25,7 +25,11 @@ class AuthorizationViewController: BaseViewController {
         button.onTap = {
             [weak self] _ in
             guard let self = self else { return }
-            self.presenter.authorizationButtonTap(login: "simplesnake@mail.ru", password: "000000")
+            self.showDialog(dialog: OkDialog(message: "Текст", onOkTap: { [weak self] in
+                guard let self = self else { return }
+                self.presenter.authorizationButtonTap(login: "simplesnake@mail.ru", password: "000000")
+            }))
+            
         }
         return button
     }()

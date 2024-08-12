@@ -36,7 +36,7 @@ class ExampleCollection: BaseCollectionView {
             [weak self] tableView, indexPath in
             guard let self = self else { return UICollectionViewCell() }
             
-            let cell: ExampleCollectionCell = tableView.dequeue(for: indexPath)
+            let cell: ExampleCollectionCell = tableView.dequeueReusableCell(withReuseIdentifier: ExampleCollection.className, for: indexPath) as! ExampleCollectionCell
             
             cell.data = self.data[indexPath.row]
             
@@ -47,7 +47,7 @@ class ExampleCollection: BaseCollectionView {
             [weak self] tableView, layout, indexPath in
             guard let self = self else { return CGSize.zero }
             
-            return CGSize(width: ширина, height: высота)
+            return CGSize(width: 0.0, height: 0.0)
         }
         
         numberOfItemsInSection = {

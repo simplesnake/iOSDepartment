@@ -7,7 +7,7 @@
 import UIKit
 
 //Пример кастомного диалога
-final class YesNoDialog: UIView {
+final class YesNoDialog: BaseDialog {
     
     lazy var messageLabel: UILabel = {
         let view = UILabel()
@@ -18,8 +18,7 @@ final class YesNoDialog: UIView {
         view.font = appearance.fonts.regularButtonFontExample
         return view
     }()
-    var shadow: UIView?
-    lazy var yesButton: BaseButton = {
+    lazy var leftButton: BaseButton = {
         let view = BaseButton()
         view.text = "Да"
         view.layer.borderWidth = 2
@@ -34,7 +33,7 @@ final class YesNoDialog: UIView {
         return view
     }()
 
-    lazy var noButton: BaseButton = {
+    lazy var rightButton: BaseButton = {
         let view = BaseButton()
         view.text = "Нет"
         view.onTap = {
@@ -58,36 +57,28 @@ final class YesNoDialog: UIView {
     var yesTap: (()->())?
     var noTap: (()->())?
     
-    func remove(){
-        UIView.animate(withDuration: 0.1, animations:  {
-            self.shadow?.alpha = 0
-            self.alpha = 0
-        }, completion: { _ in
-        self.removeFromSuperview()
-        self.shadow?.removeFromSuperview()
-        })
-    }
+    
     
     init(message: String, onYesTap: (()->())?,onNoTap: (()->())?){
-        super.init(frame: CGRect())
+        super.init()
         addSubview(messageLabel)
-        addSubview(noButton)
-        addSubview(yesButton)
+        addSubview(rightButton)
+        addSubview(leftButton)
         messageLabel.snp.makeConstraints{ make in
             make.top.equalToSuperview().offset(20)
             make.left.right.equalToSuperview()
         }
-        yesButton.snp.makeConstraints{ make in
+        leftButton.snp.makeConstraints{ make in
             make.top.equalTo(messageLabel.snp.bottom).offset(20)
             make.left.equalToSuperview().inset(12)
             make.width.equalTo(snp.width).dividedBy(2).offset(-20)
             make.bottom.equalToSuperview().inset(12)
             make.height.equalTo(48)
         }
-        noButton.snp.makeConstraints{ make in
+        rightButton.snp.makeConstraints{ make in
             make.top.equalTo(messageLabel.snp.bottom).offset(20)
             make.right.equalToSuperview().inset(12)
-            make.left.equalTo(yesButton.snp.right).offset(20)
+            make.left.equalTo(leftButton.snp.right).offset(20)
             make.bottom.equalToSuperview().inset(12)
             make.height.equalTo(48)
         }

@@ -38,13 +38,17 @@ extension KFImage {
 
         var configurations: [(HoldingView) -> HoldingView] = []
         var renderConfigurations: [(HoldingView.RenderingView) -> Void] = []
+        var contentConfiguration: ((HoldingView) -> AnyView)? = nil
         
         var cancelOnDisappear: Bool = false
+        var reducePriorityOnDisappear: Bool = false
         var placeholder: ((Progress) -> AnyView)? = nil
 
         let onFailureDelegate = Delegate<KingfisherError, Void>()
         let onSuccessDelegate = Delegate<RetrieveImageResult, Void>()
         let onProgressDelegate = Delegate<(Int64, Int64), Void>()
+        
+        var startLoadingBeforeViewAppear: Bool = false
         
         init(source: Source?) {
             self.source = source
@@ -88,7 +92,7 @@ extension KFImage.Context: Hashable {
     }
 }
 
-#if canImport(UIKit) && !os(watchOS)
+#if !os(watchOS)
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension KFAnimatedImage {
     public typealias Context = KFImage.Context

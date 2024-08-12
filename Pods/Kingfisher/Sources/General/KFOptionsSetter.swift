@@ -26,6 +26,11 @@
 
 import Foundation
 import CoreGraphics
+#if os(macOS)
+import AppKit
+#else
+import UIKit
+#endif
 
 public protocol KFOptionSetter {
     var options: KingfisherParsedOptionsInfo { get nonmutating set }
@@ -55,8 +60,8 @@ extension KFOptionSetter {
         return self
     }
 
-    /// Sets the the done block to current builder.
-    /// - Parameter block: Called when the image task successfully completes and the the image set is done. If `block`
+    /// Sets the done block to current builder.
+    /// - Parameter block: Called when the image task successfully completes and the image set is done. If `block`
     ///                    is `nil`, the callback will be reset.
     /// - Returns: A `KF.Builder` with changes applied.
     public func onSuccess(_ block: ((RetrieveImageResult) -> Void)?) -> Self {
@@ -242,7 +247,7 @@ extension KFOptionSetter {
     /// - Returns: A `Self` value with changes applied.
     /// If set, options will be passed the store operation for a new files.
     ///
-    /// This is useful if you want to implement file enctyption on first write - eg [.completeFileProtection]
+    /// This is useful if you want to implement file encryption on first write - eg [.completeFileProtection]
     ///
     public func diskStoreWriteOptions(_ writingOptions: Data.WritingOptions) -> Self {
         options.diskStoreWriteOptions = writingOptions
@@ -367,7 +372,7 @@ extension KFOptionSetter {
     /// This is the last chance you can modify the image download request. You can modify the request for some
     /// customizing purpose, such as adding auth token to the header, do basic HTTP auth or something like url mapping.
     ///
-    public func requestModifier(_ modifier: ImageDownloadRequestModifier) -> Self {
+    public func requestModifier(_ modifier: AsyncImageDownloadRequestModifier) -> Self {
         options.requestModifier = modifier
         return self
     }
@@ -442,8 +447,7 @@ extension KFOptionSetter {
     ///                         to form a processor pipeline.
     /// - Returns: A `Self` value with changes applied.
     ///
-    /// - Note:
-    /// To append processors to current ones instead of replacing them all, concatenate them by `|>`, then use
+    /// - Note: To append processors to current ones instead of replacing them all, concatenate them by `|>`, then use
     /// `appendProcessor(_:)`.
     public func setProcessors(_ processors: [ImageProcessor]) -> Self {
         switch processors.count {

@@ -10,6 +10,8 @@ import UIKit
 
 class BaseViewController: UIViewController, BaseViewInput, NavigationProtocol, LoaderProtocol, ToastProtocol, DialogProtocol{
     
+    
+    
     internal var loader: LoaderViewProtocol = ExampleLoader()
     
     var firstTime: Bool = true

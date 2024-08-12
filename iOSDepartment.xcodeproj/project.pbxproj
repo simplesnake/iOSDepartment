@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EB402B12C6A360200D4A244 /* BaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB402B02C6A360200D4A244 /* BaseDialog.swift */; };
 		6C46F57C27D4B351006515AB /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F57B27D4B351006515AB /* EventManager.swift */; };
 		6C46F57F27D4B4B6006515AB /* BlueToothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F57E27D4B4B6006515AB /* BlueToothManager.swift */; };
 		6C46F59827D4B6CA006515AB /* ImageScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F58327D4B6CA006515AB /* ImageScreenAssembly.swift */; };
@@ -128,6 +129,7 @@
 
 /* Begin PBXFileReference section */
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB402B02C6A360200D4A244 /* BaseDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDialog.swift; sourceTree = "<group>"; };
 		6C46F57B27D4B351006515AB /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		6C46F57E27D4B4B6006515AB /* BlueToothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueToothManager.swift; sourceTree = "<group>"; };
 		6C46F58327D4B6CA006515AB /* ImageScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScreenAssembly.swift; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 			children = (
 				C96378C126EBA26200D1CDE2 /* OkDialog.swift */,
 				C96378CF26EBAA8B00D1CDE2 /* YesNoDialog.swift */,
+				0EB402B02C6A360200D4A244 /* BaseDialog.swift */,
 			);
 			path = Dialogs;
 			sourceTree = "<group>";
@@ -977,6 +980,7 @@
 				6C46F5A227D4B6CA006515AB /* ImageScreenInteractorOutput.swift in Sources */,
 				F6F73F9B2520F02D003D92F8 /* BaseInteractorInput.swift in Sources */,
 				6C46F57F27D4B4B6006515AB /* BlueToothManager.swift in Sources */,
+				0EB402B12C6A360200D4A244 /* BaseDialog.swift in Sources */,
 				6C46F59827D4B6CA006515AB /* ImageScreenAssembly.swift in Sources */,
 				6C46F5A027D4B6CA006515AB /* ImageScreenInteractor.swift in Sources */,
 				F602012226DC13E500372820 /* PaginationResponse.swift in Sources */,
@@ -1192,8 +1196,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3YGVSF883N;
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1213,8 +1218,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3YGVSF883N;
 				INFOPLIST_FILE = iOSDepartment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

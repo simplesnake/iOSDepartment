@@ -9,7 +9,7 @@
 import UIKit
 
 //Пример кастомного диалога
-final class OkDialog: UIView {
+final class OkDialog: BaseDialog {
     
     lazy var messageLabel: UILabel = {
         let view = UILabel()
@@ -19,7 +19,7 @@ final class OkDialog: UIView {
         view.font = appearance.fonts.regularButtonFontExample
         return view
     }()
-    var shadow: UIView?
+    
     lazy var okButton: BaseButton = {
         let view = BaseButton()
         view.text = "Ок"
@@ -45,18 +45,10 @@ final class OkDialog: UIView {
 
     var okTap: (()->())?
     
-    func remove(){
-        UIView.animate(withDuration: 0.1, animations:  {
-            self.shadow?.alpha = 0
-            self.alpha = 0
-        }, completion: { _ in
-        self.removeFromSuperview()
-        self.shadow?.removeFromSuperview()
-        })
-    }
+    
     
     init(message: String, onOkTap: (()->())?){
-        super.init(frame: CGRect())
+        super.init()
         addSubview(messageLabel)
         addSubview(okButton)
         messageLabel.snp.makeConstraints{ make in
