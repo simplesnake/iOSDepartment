@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E19CEFD2C7A378D008A3AE8 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEE62C7A378D008A3AE8 /* AuthorizationAssembly.swift */; };
+		0E19CEFE2C7A378D008A3AE8 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEE82C7A378D008A3AE8 /* AuthorizationData.swift */; };
+		0E19CEFF2C7A378D008A3AE8 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEEA2C7A378D008A3AE8 /* AuthorizationInteractor.swift */; };
+		0E19CF002C7A378D008A3AE8 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEEB2C7A378D008A3AE8 /* AuthorizationInteractorInput.swift */; };
+		0E19CF012C7A378D008A3AE8 /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEEC2C7A378D008A3AE8 /* AuthorizationInteractorOutput.swift */; };
+		0E19CF022C7A378D008A3AE8 /* AuthorizationLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E19CEEE2C7A378D008A3AE8 /* AuthorizationLocalization.strings */; };
+		0E19CF032C7A378D008A3AE8 /* AuthorizationLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEEF2C7A378D008A3AE8 /* AuthorizationLocalization.swift */; };
+		0E19CF042C7A378D008A3AE8 /* AuthorizationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF12C7A378D008A3AE8 /* AuthorizationNetwork.swift */; };
+		0E19CF052C7A378D008A3AE8 /* AuthorizationCallbackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF32C7A378D008A3AE8 /* AuthorizationCallbackDelegate.swift */; };
+		0E19CF062C7A378D008A3AE8 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF42C7A378D008A3AE8 /* AuthorizationPresenter.swift */; };
+		0E19CF072C7A378D008A3AE8 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF62C7A378D008A3AE8 /* AuthorizationRouter.swift */; };
+		0E19CF082C7A378D008A3AE8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF82C7A378D008A3AE8 /* AuthorizationViewController.swift */; };
+		0E19CF092C7A378D008A3AE8 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEF92C7A378D008A3AE8 /* AuthorizationViewInput.swift */; };
+		0E19CF0A2C7A378D008A3AE8 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19CEFA2C7A378D008A3AE8 /* AuthorizationViewOutput.swift */; };
+		0E3356FD2C78BA790074E9CA /* AuthorizationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3356FC2C78BA790074E9CA /* AuthorizationFactory.swift */; };
 		0EB402B12C6A360200D4A244 /* BaseDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB402B02C6A360200D4A244 /* BaseDialog.swift */; };
 		6C46F57C27D4B351006515AB /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F57B27D4B351006515AB /* EventManager.swift */; };
 		6C46F57F27D4B4B6006515AB /* BlueToothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46F57E27D4B4B6006515AB /* BlueToothManager.swift */; };
@@ -81,11 +96,6 @@
 		F6465938251166FC00E6D999 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6465937251166FC00E6D999 /* RequestModel.swift */; };
 		F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64659392511674C00E6D999 /* BaseTarget.swift */; };
 		F646593C251167FE00E6D999 /* BaseNetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646593B251167FE00E6D999 /* BaseNetworkModels.swift */; };
-		F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646593D2511685700E6D999 /* AuthorizationNetwork.swift */; };
-		F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594325116BAF00E6D999 /* AuthorizationData.swift */; };
-		F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594525116BC600E6D999 /* AuthorizationAssembly.swift */; };
-		F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594725116C2A00E6D999 /* AuthorizationRouter.swift */; };
-		F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646594925116C4500E6D999 /* AuthorizationPresenter.swift */; };
 		F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */; };
 		F6D2EF012506B8DF0098CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */; };
 		F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D2EF072506B8E40098CED8 /* Assets.xcassets */; };
@@ -111,24 +121,30 @@
 		F6F73F9B2520F02D003D92F8 /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F9A2520F02D003D92F8 /* BaseInteractorInput.swift */; };
 		F6F73F9F2520F130003D92F8 /* BaseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73F9E2520F130003D92F8 /* BaseLoader.swift */; };
 		F6F73FA32520F1C8003D92F8 /* ExampleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F73FA22520F1C8003D92F8 /* ExampleLoader.swift */; };
-		F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */; };
-		F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */; };
-		F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */; };
 		F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */; };
-		F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */; };
-		F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */; };
-		F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */; };
 		F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */; };
 		F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */; };
 		F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */; };
 		F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2212506D754007EF1F8 /* String+Extensions.swift */; };
-		F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */; };
-		F6FED2352506DB73007EF1F8 /* AuthorizationLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */; };
-		F6FED23A2506DB8A007EF1F8 /* AuthorizationLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05DDF5CB33B3B30754E34F33 /* Pods_iOSDepartment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDepartment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E19CEE62C7A378D008A3AE8 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		0E19CEE82C7A378D008A3AE8 /* AuthorizationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
+		0E19CEEA2C7A378D008A3AE8 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		0E19CEEB2C7A378D008A3AE8 /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
+		0E19CEEC2C7A378D008A3AE8 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
+		0E19CEEE2C7A378D008A3AE8 /* AuthorizationLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AuthorizationLocalization.strings; sourceTree = "<group>"; };
+		0E19CEEF2C7A378D008A3AE8 /* AuthorizationLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationLocalization.swift; sourceTree = "<group>"; };
+		0E19CEF12C7A378D008A3AE8 /* AuthorizationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationNetwork.swift; sourceTree = "<group>"; };
+		0E19CEF32C7A378D008A3AE8 /* AuthorizationCallbackDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCallbackDelegate.swift; sourceTree = "<group>"; };
+		0E19CEF42C7A378D008A3AE8 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		0E19CEF62C7A378D008A3AE8 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		0E19CEF82C7A378D008A3AE8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		0E19CEF92C7A378D008A3AE8 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
+		0E19CEFA2C7A378D008A3AE8 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
+		0E3356FC2C78BA790074E9CA /* AuthorizationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationFactory.swift; sourceTree = "<group>"; };
 		0EB402B02C6A360200D4A244 /* BaseDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDialog.swift; sourceTree = "<group>"; };
 		6C46F57B27D4B351006515AB /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		6C46F57E27D4B4B6006515AB /* BlueToothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueToothManager.swift; sourceTree = "<group>"; };
@@ -205,11 +221,6 @@
 		F6465937251166FC00E6D999 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		F64659392511674C00E6D999 /* BaseTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTarget.swift; sourceTree = "<group>"; };
 		F646593B251167FE00E6D999 /* BaseNetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkModels.swift; sourceTree = "<group>"; };
-		F646593D2511685700E6D999 /* AuthorizationNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationNetwork.swift; sourceTree = "<group>"; };
-		F646594325116BAF00E6D999 /* AuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationData.swift; sourceTree = "<group>"; };
-		F646594525116BC600E6D999 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
-		F646594725116C2A00E6D999 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
-		F646594925116C4500E6D999 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		F6D2EEFB2506B8DF0098CED8 /* iOSDepartment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDepartment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D2EEFE2506B8DF0098CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D2EF002506B8DF0098CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -237,20 +248,11 @@
 		F6F73F9A2520F02D003D92F8 /* BaseInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
 		F6F73F9E2520F130003D92F8 /* BaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoader.swift; sourceTree = "<group>"; };
 		F6F73FA22520F1C8003D92F8 /* ExampleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoader.swift; sourceTree = "<group>"; };
-		F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
-		F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
 		F6FED2052506C7A7007EF1F8 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
-		F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
-		F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
 		F6FED21A2506D586007EF1F8 /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		F6FED21C2506D635007EF1F8 /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
 		F6FED21F2506D6A2007EF1F8 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		F6FED2212506D754007EF1F8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLocalization.swift; sourceTree = "<group>"; };
-		F6FED2362506DB73007EF1F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AuthorizationLocalization.strings; sourceTree = "<group>"; };
-		F6FED23B2506DB8A007EF1F8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AuthorizationLocalization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,12 +267,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		595FE729250BC04F00456E14 /* Network */ = {
+		0E19CEE72C7A378D008A3AE8 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				F646593D2511685700E6D999 /* AuthorizationNetwork.swift */,
+				0E19CEE62C7A378D008A3AE8 /* AuthorizationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0E19CEE92C7A378D008A3AE8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEE82C7A378D008A3AE8 /* AuthorizationData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0E19CEED2C7A378D008A3AE8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEEA2C7A378D008A3AE8 /* AuthorizationInteractor.swift */,
+				0E19CEEB2C7A378D008A3AE8 /* AuthorizationInteractorInput.swift */,
+				0E19CEEC2C7A378D008A3AE8 /* AuthorizationInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0E19CEF02C7A378D008A3AE8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEEE2C7A378D008A3AE8 /* AuthorizationLocalization.strings */,
+				0E19CEEF2C7A378D008A3AE8 /* AuthorizationLocalization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		0E19CEF22C7A378D008A3AE8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEF12C7A378D008A3AE8 /* AuthorizationNetwork.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0E19CEF52C7A378D008A3AE8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEF32C7A378D008A3AE8 /* AuthorizationCallbackDelegate.swift */,
+				0E19CEF42C7A378D008A3AE8 /* AuthorizationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0E19CEF72C7A378D008A3AE8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEF62C7A378D008A3AE8 /* AuthorizationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0E19CEFB2C7A378D008A3AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEF82C7A378D008A3AE8 /* AuthorizationViewController.swift */,
+				0E19CEF92C7A378D008A3AE8 /* AuthorizationViewInput.swift */,
+				0E19CEFA2C7A378D008A3AE8 /* AuthorizationViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E19CEFC2C7A378D008A3AE8 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				0E19CEE72C7A378D008A3AE8 /* Assembly */,
+				0E19CEE92C7A378D008A3AE8 /* Data */,
+				0E19CEED2C7A378D008A3AE8 /* Interactor */,
+				0E19CEF02C7A378D008A3AE8 /* Localization */,
+				0E19CEF22C7A378D008A3AE8 /* Network */,
+				0E19CEF52C7A378D008A3AE8 /* Presenter */,
+				0E19CEF72C7A378D008A3AE8 /* Router */,
+				0E19CEFB2C7A378D008A3AE8 /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		0E3356FB2C78B9F80074E9CA /* AuthorizationModule */ = {
+			isa = PBXGroup;
+			children = (
+				0E3356FC2C78BA790074E9CA /* AuthorizationFactory.swift */,
+				0E19CEFC2C7A378D008A3AE8 /* Authorization */,
+			);
+			path = AuthorizationModule;
 			sourceTree = "<group>";
 		};
 		6C46F58127D4B6CA006515AB /* ImageScreen */ = {
@@ -552,38 +640,6 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
-		F646593F25116B4B00E6D999 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				F646594925116C4500E6D999 /* AuthorizationPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		F646594025116B6200E6D999 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				F646594725116C2A00E6D999 /* AuthorizationRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		F646594125116B6E00E6D999 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				F646594525116BC600E6D999 /* AuthorizationAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		F646594225116B8300E6D999 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				F646594325116BAF00E6D999 /* AuthorizationData.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		F670E3AA2511611100762513 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +675,7 @@
 		F6D2EEFD2506B8DF0098CED8 /* iOSDepartment */ = {
 			isa = PBXGroup;
 			children = (
+				0E3356FB2C78B9F80074E9CA /* AuthorizationModule */,
 				6C82A0CA27D4C3A500969F22 /* Localization */,
 				F6F73F9D2520F0ED003D92F8 /* Custom views */,
 				F6F1204B2517A5CD00F40383 /* Base views */,
@@ -732,34 +789,8 @@
 		F6FED1F32506C0AE007EF1F8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F6FED1F42506C0BD007EF1F8 /* Authorization */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		F6FED1F42506C0BD007EF1F8 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				F646594225116B8300E6D999 /* Data */,
-				F646594125116B6E00E6D999 /* Assembly */,
-				F646594025116B6200E6D999 /* Router */,
-				F646593F25116B4B00E6D999 /* Presenter */,
-				595FE729250BC04F00456E14 /* Network */,
-				F6FED1F52506C0CA007EF1F8 /* View */,
-				F6FED20B2506C984007EF1F8 /* Interactor */,
-				F6FED2252506D89A007EF1F8 /* Localization */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
-		F6FED1F52506C0CA007EF1F8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F6FED1F62506C10E007EF1F8 /* AuthorizationViewController.swift */,
-				F6FED1FB2506C284007EF1F8 /* AuthorizationViewOutput.swift */,
-				F6FED2012506C35F007EF1F8 /* AuthorizationViewInput.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F6FED1F82506C165007EF1F8 /* Architecture */ = {
@@ -776,16 +807,6 @@
 			path = Architecture;
 			sourceTree = "<group>";
 		};
-		F6FED20B2506C984007EF1F8 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				F6FED2122506CA1B007EF1F8 /* AuthorizationInteractor.swift */,
-				F6FED2142506CABE007EF1F8 /* AuthorizationInteractorOutput.swift */,
-				F6FED2162506CAD0007EF1F8 /* AuthorizationInteractorInput.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		F6FED21E2506D64B007EF1F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -798,16 +819,6 @@
 				C9AB746827D4BA13003F8BE0 /* UIAlertController+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F6FED2252506D89A007EF1F8 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				F6FED2262506D8A7007EF1F8 /* AuthorizationLocalization.swift */,
-				F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */,
-				F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */,
-			);
-			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -874,13 +885,12 @@
 				F6D2EF0B2506B8E40098CED8 /* LaunchScreen.storyboard in Resources */,
 				6C82A0BB27D4C1A000969F22 /* CameraView.strings in Resources */,
 				6C46F5A327D4B6CA006515AB /* ImageScreenLocalization.strings in Resources */,
-				F6FED2352506DB73007EF1F8 /* AuthorizationLocalization.strings in Resources */,
 				6C82A0D027D4C3A500969F22 /* Localizable.strings in Resources */,
 				F6D2EF082506B8E40098CED8 /* Assets.xcassets in Resources */,
 				6C82A0D227D4C3A500969F22 /* ErrorLocalizable.strings in Resources */,
 				6C82A0AF27D4C1A000969F22 /* CameraViewAssets.xcassets in Resources */,
-				F6FED23A2506DB8A007EF1F8 /* AuthorizationLocalization.strings in Resources */,
 				6C82A0C027D4C1A000969F22 /* ConfirmViewController.xib in Resources */,
+				0E19CF022C7A378D008A3AE8 /* AuthorizationLocalization.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,32 +948,33 @@
 				6C82A07C27D4B21100969F22 /* BaseTextView.swift in Sources */,
 				6C82A0BA27D4C1A000969F22 /* ImageFetcher.swift in Sources */,
 				F6F73FA32520F1C8003D92F8 /* ExampleLoader.swift in Sources */,
-				F6FED2022506C35F007EF1F8 /* AuthorizationViewInput.swift in Sources */,
-				F6FED2172506CAD0007EF1F8 /* AuthorizationInteractorInput.swift in Sources */,
 				6C46F57C27D4B351006515AB /* EventManager.swift in Sources */,
 				F6FED2222506D754007EF1F8 /* String+Extensions.swift in Sources */,
 				C96378CD26EBA69B00D1CDE2 /* KeyboardService.swift in Sources */,
-				F646594625116BC600E6D999 /* AuthorizationAssembly.swift in Sources */,
 				F646593A2511674C00E6D999 /* BaseTarget.swift in Sources */,
 				F602011B26DBFB3500372820 /* BaseCollectionView.swift in Sources */,
 				C96378CB26EBA66600D1CDE2 /* KeyboardSensitiveConstraints.swift in Sources */,
 				F602012026DC13D300372820 /* PaginationRequest.swift in Sources */,
+				0E19CF0A2C7A378D008A3AE8 /* AuthorizationViewOutput.swift in Sources */,
 				C96378C726EBA4E600D1CDE2 /* AppearanceColors.swift in Sources */,
+				0E19CF012C7A378D008A3AE8 /* AuthorizationInteractorOutput.swift in Sources */,
 				F6FED2202506D6A2007EF1F8 /* NSObject+Extensions.swift in Sources */,
 				6C46F5A527D4B6CA006515AB /* ImageScreenRouter.swift in Sources */,
 				F6F73F8E2520EBDA003D92F8 /* BaseViewInput.swift in Sources */,
 				C96378C526EBA4C500D1CDE2 /* Appearance.swift in Sources */,
 				F6F73F56251FB6E8003D92F8 /* BaseRouter.swift in Sources */,
+				0E19CF092C7A378D008A3AE8 /* AuthorizationViewInput.swift in Sources */,
 				F6F73F7C2520EACC003D92F8 /* LoaderProtocol.swift in Sources */,
-				F646593E2511685700E6D999 /* AuthorizationNetwork.swift in Sources */,
 				6C82A0C327D4C1A000969F22 /* PermissionsView.swift in Sources */,
 				6C46F59A27D4B6CA006515AB /* ImageScreenCallbackDelegate.swift in Sources */,
+				0E19CF072C7A378D008A3AE8 /* AuthorizationRouter.swift in Sources */,
 				6C46F59D27D4B6CA006515AB /* ImageScreenViewOutput.swift in Sources */,
-				F6FED2272506D8A7007EF1F8 /* AuthorizationLocalization.swift in Sources */,
 				6C46F59E27D4B6CA006515AB /* ImageScreenViewController.swift in Sources */,
 				F6F73F61251FD3BB003D92F8 /* BaseViewController.swift in Sources */,
 				6C82A0B527D4C1A000969F22 /* SingleImageSaver.swift in Sources */,
+				0E3356FD2C78BA790074E9CA /* AuthorizationFactory.swift in Sources */,
 				6C82A0BD27D4C1A000969F22 /* PhotoLibraryViewController.swift in Sources */,
+				0E19CF032C7A378D008A3AE8 /* AuthorizationLocalization.swift in Sources */,
 				C9AB746B27D4D0B9003F8BE0 /* BaseToastView.swift in Sources */,
 				6C46F59927D4B6CA006515AB /* ImageScreenPresenter.swift in Sources */,
 				6C82A07F27D4B24300969F22 /* BaseCollectionCell.swift in Sources */,
@@ -972,8 +983,10 @@
 				C96378D926EBB7EA00D1CDE2 /* HeaderViewController.swift in Sources */,
 				6C82A0C227D4C1A000969F22 /* CropOverlay.swift in Sources */,
 				C98E8C3626E62D8A007F652B /* CollectionWithPagination.swift in Sources */,
+				0E19CEFD2C7A378D008A3AE8 /* AuthorizationAssembly.swift in Sources */,
 				F6FED21B2506D586007EF1F8 /* BaseAssembly.swift in Sources */,
 				6C82A0B627D4C1A000969F22 /* VolumeControl.swift in Sources */,
+				0E19CEFF2C7A378D008A3AE8 /* AuthorizationInteractor.swift in Sources */,
 				F602011D26DC07E700372820 /* PaginationManager.swift in Sources */,
 				6C82A0BC27D4C1A000969F22 /* CameraViewControllerConstraint.swift in Sources */,
 				6C82A0B727D4C1A000969F22 /* PhotoLibraryAuthorizer.swift in Sources */,
@@ -987,39 +1000,37 @@
 				6C46F5B027D4B7C3006515AB /* UIImageView+extensions.swift in Sources */,
 				C96378D026EBAA8B00D1CDE2 /* YesNoDialog.swift in Sources */,
 				6C46F5A127D4B6CA006515AB /* ImageScreenInteractorInput.swift in Sources */,
-				F6FED1FC2506C284007EF1F8 /* AuthorizationViewOutput.swift in Sources */,
 				6C82A09027D4C15F00969F22 /* CameraAndGaleryWithCrop.swift in Sources */,
 				F6FED21D2506D635007EF1F8 /* BaseLocalization.swift in Sources */,
 				6C82A0B127D4C1A000969F22 /* Utilities.swift in Sources */,
+				0E19CF062C7A378D008A3AE8 /* AuthorizationPresenter.swift in Sources */,
 				6C46F5B427D4BDFB006515AB /* MaskedTextFieldWithTitle.swift in Sources */,
 				6C82A0BE27D4C1A000969F22 /* ConfirmViewController.swift in Sources */,
-				F646594825116C2A00E6D999 /* AuthorizationRouter.swift in Sources */,
 				C9AB746927D4BA14003F8BE0 /* UIAlertController+Extensions.swift in Sources */,
+				0E19CF082C7A378D008A3AE8 /* AuthorizationViewController.swift in Sources */,
 				6C46F59C27D4B6CA006515AB /* ImageScreenViewInput.swift in Sources */,
-				F6FED1F72506C10E007EF1F8 /* AuthorizationViewController.swift in Sources */,
-				F646594425116BAF00E6D999 /* AuthorizationData.swift in Sources */,
 				C9AB747127D4D932003F8BE0 /* ExampleCollectionCell.swift in Sources */,
 				6C46F5A427D4B6CA006515AB /* ImageScreenLocalization.swift in Sources */,
+				0E19CF052C7A378D008A3AE8 /* AuthorizationCallbackDelegate.swift in Sources */,
 				6C82A0B327D4C1A000969F22 /* SingleImageFetcher.swift in Sources */,
 				6C82A0C127D4C1A000969F22 /* CameraView.swift in Sources */,
 				F6F73F5C251FB9B0003D92F8 /* UIApplication+Extensions.swift in Sources */,
 				F6F73F792520EA99003D92F8 /* LoaderViewProtocol.swift in Sources */,
 				F6F1204225179E3900F40383 /* PlistManager.swift in Sources */,
-				F6FED2152506CABE007EF1F8 /* AuthorizationInteractorOutput.swift in Sources */,
 				6C82A0D327D4C3A500969F22 /* Localizable.swift in Sources */,
 				F6F73F852520EB73003D92F8 /* ToastProtocol.swift in Sources */,
-				F6FED2132506CA1B007EF1F8 /* AuthorizationInteractor.swift in Sources */,
 				C9AB746E27D4D91B003F8BE0 /* ExampleCollection.swift in Sources */,
 				F6F1204D2517A6A400F40383 /* BaseButton.swift in Sources */,
-				F646594A25116C4500E6D999 /* AuthorizationPresenter.swift in Sources */,
 				F6D2EEFF2506B8DF0098CED8 /* AppDelegate.swift in Sources */,
 				C96378C026EBA1BC00D1CDE2 /* DialogProtocol.swift in Sources */,
 				F6F73F6825208218003D92F8 /* BaseNetwork.swift in Sources */,
+				0E19CF002C7A378D008A3AE8 /* AuthorizationInteractorInput.swift in Sources */,
 				F6F1205625192BEF00F40383 /* VerbosePlugin.swift in Sources */,
 				F6F73F932520EE4C003D92F8 /* BaseInteractor.swift in Sources */,
 				F6F73F51251FB3EB003D92F8 /* UIViewController+Extensions.swift in Sources */,
 				F6F73F59251FB70A003D92F8 /* NavigationProtocol.swift in Sources */,
 				F6465936251165FC00E6D999 /* AuthorizationResponse.swift in Sources */,
+				0E19CEFE2C7A378D008A3AE8 /* AuthorizationData.swift in Sources */,
 				6C82A0B427D4C1A000969F22 /* CameraShot.swift in Sources */,
 				F646592E2511619A00E6D999 /* API.swift in Sources */,
 				F6F73F742520A2EF003D92F8 /* UIView+Extensions.swift in Sources */,
@@ -1039,6 +1050,7 @@
 				F646593C251167FE00E6D999 /* BaseNetworkModels.swift in Sources */,
 				6C82A0B927D4C1A000969F22 /* UIButtonExtensions.swift in Sources */,
 				F6FED2062506C7A7007EF1F8 /* BasePresenter.swift in Sources */,
+				0E19CF042C7A378D008A3AE8 /* AuthorizationNetwork.swift in Sources */,
 				F6465934251165F000E6D999 /* AuthorizationRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1052,22 +1064,6 @@
 				F6D2EF0A2506B8E40098CED8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F6FED2372506DB73007EF1F8 /* AuthorizationLocalization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6FED2362506DB73007EF1F8 /* en */,
-			);
-			name = AuthorizationLocalization.strings;
-			sourceTree = "<group>";
-		};
-		F6FED23C2506DB8A007EF1F8 /* AuthorizationLocalization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6FED23B2506DB8A007EF1F8 /* ru */,
-			);
-			name = AuthorizationLocalization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
