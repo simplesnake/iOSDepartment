@@ -73,6 +73,37 @@ extension UIViewController {
         view.endEditing(true)
     }
 
+    // MARK: - добавление свайпа сверху вниз на модалку для ее закрытия
+    func addSwipeToDismissGesture() {
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
+        view.addGestureRecognizer(panGestureRecognizer)
+    }
+    
+    // сейчас модалку будет закрывать при свайпе вниз на любой части экрана
+    // свайп должен произвести > 100 точек, иначе вернет модалку обратно
+    @objc private func handleSwipeGesture(_ sender: UIPanGestureRecognizer) {
+        guard let window = UIApplication.shared.keyWindow else { return }
+        
+        let touchPoint = sender.translation(in: window)
+        var initialTouchPoint = CGPoint.zero
+        
+        switch sender.state {
+            case .began:
+                initialTouchPoint = touchPoint
+            case .changed:
+                if touchPoint.y > initialTouchPoint.y {
+                    view.frame.origin.y = touchPoint.y - initialTouchPoint.y
+                }
+            case .ended, .cancelled:
+                if touchPoint.y - initialTouchPoint.y > 100 {
+                    dismiss(animated: true, completion: nil)
+                } else {
+                    UIView.animate(withDuration: 0.2, animations: {
+                        self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+                    })
+                }
+            default:
+                break
+        }
+    }
 }
-
-
