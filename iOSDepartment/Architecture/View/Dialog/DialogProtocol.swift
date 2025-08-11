@@ -11,9 +11,23 @@ import UIKit
 protocol DialogProtocol: NSObject {
     
     func showDialog(dialog: BaseDialog)
+    func showModal(vc: BaseViewController, detents: [UISheetPresentationController.Detent])
 }
 
 extension DialogProtocol where Self: BaseViewController {
+    
+    
+    func showModal(vc: BaseViewController, detents: [UISheetPresentationController.Detent]){
+        if let sheet = vc.sheetPresentationController {
+            vc.modalPresentationStyle = .formSheet
+            sheet.detents = detents
+            vc.isModalInPresentation = true
+            self.present(vc, animated: true)
+        }
+    }
+    
+    
+    
     
     func showDialog(dialog: BaseDialog) {
         guard !view.isHidden && view.window != nil else {
